@@ -1,0 +1,103 @@
+info:
+  contact: {}
+paths:
+  /:
+    get:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - BasicAuth: []
+      summary: Home
+  /api-status:
+    get:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - BasicAuth: []
+      summary: live API status
+  /generate:
+    patch:
+      consumes:
+      - application/json
+      description: generates new Zerodha access token using requestToken and restart
+        the worker
+      parameters:
+      - description: enter zerodha request token
+        in: query
+        name: requestToken
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - BasicAuth: []
+      summary: generate zerodha access token
+  /start:
+    patch:
+      consumes:
+      - application/json
+      parameters:
+      - description: select worker
+        enum:
+        - zerodha
+        - dg_plus
+        in: query
+        name: worker
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - BasicAuth: []
+      summary: start worker
+  /status:
+    get:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - BasicAuth: []
+      summary: worker status
+  /stop:
+    patch:
+      consumes:
+      - application/json
+      parameters:
+      - description: select worker
+        enum:
+        - zerodha
+        - dg_plus
+        in: query
+        name: worker
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - BasicAuth: []
+      summary: stop worker
+  /update-config:
+    get:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - BasicAuth: []
+      summary: update configuration
+securityDefinitions:
+  BasicAuth:
+    type: basic
+swagger: "2.0"
