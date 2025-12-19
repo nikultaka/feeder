@@ -253,7 +253,7 @@ func main() {
 
 	app, err := newrelic.NewApplication(
 		newrelic.ConfigAppName("gosetup"),
-		newrelic.ConfigLicense("b9edf59fedf4cfae816d860e8ff5adfcFFFFNRAL"),
+		newrelic.ConfigLicense(""),
 		newrelic.ConfigAppLogForwardingEnabled(true),
 	)
 	// If an application could not be created then err will reveal why.
