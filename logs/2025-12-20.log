@@ -1,0 +1,15 @@
+{"host":"localhost:8081","level":"info","method":"GET","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-20T12:07:25+05:30","timestamp":"2025-12-20T12:07:25+05:30","url":"/swagger/index.html"}
+{"host":"localhost:8081","level":"info","method":"GET","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-20T12:07:25+05:30","timestamp":"2025-12-20T12:07:25+05:30","url":"/swagger/swagger-ui.css"}
+{"host":"localhost:8081","level":"info","method":"GET","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-20T12:07:25+05:30","timestamp":"2025-12-20T12:07:25+05:30","url":"/swagger/swagger-ui-standalone-preset.js"}
+{"host":"localhost:8081","level":"info","method":"GET","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-20T12:07:25+05:30","timestamp":"2025-12-20T12:07:25+05:30","url":"/swagger/swagger-ui-bundle.js"}
+{"host":"localhost:8081","level":"info","method":"GET","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-20T12:07:25+05:30","timestamp":"2025-12-20T12:07:25+05:30","url":"/swagger/favicon-32x32.png"}
+{"host":"localhost:8081","level":"info","method":"GET","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-20T12:07:25+05:30","timestamp":"2025-12-20T12:07:25+05:30","url":"/swagger/doc.json"}
+{"host":"localhost:8081","level":"info","method":"PATCH","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-20T12:07:36+05:30","timestamp":"2025-12-20T12:07:36+05:30","url":"/start?worker=feeder"}
+{"host":"localhost:8081","level":"info","method":"PATCH","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-20T12:08:49+05:30","timestamp":"2025-12-20T12:08:49+05:30","url":"/start?worker=feeder"}
+{"host":"localhost:8081","level":"info","method":"PATCH","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-20T12:10:27+05:30","timestamp":"2025-12-20T12:10:27+05:30","url":"/start?worker=feeder"}
+{"host":"localhost:8081","level":"info","method":"PATCH","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-20T12:11:34+05:30","timestamp":"2025-12-20T12:11:34+05:30","url":"/start?worker=feeder"}
+{"host":"localhost:8081","level":"info","method":"PATCH","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-20T12:12:45+05:30","timestamp":"2025-12-20T12:12:45+05:30","url":"/start?worker=feeder"}
+{"host":"localhost:8081","level":"info","method":"PATCH","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-20T12:15:29+05:30","timestamp":"2025-12-20T12:15:29+05:30","url":"/start?worker=feeder"}
+{"host":"localhost:8081","level":"info","method":"GET","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-20T12:15:38+05:30","timestamp":"2025-12-20T12:15:38+05:30","url":"/status"}
+{"host":"localhost:8081","level":"info","method":"PATCH","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-20T12:17:01+05:30","timestamp":"2025-12-20T12:17:01+05:30","url":"/stop?worker=feeder"}
+{"host":"localhost:8081","level":"info","method":"PATCH","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-20T12:18:31+05:30","timestamp":"2025-12-20T12:18:31+05:30","url":"/start?worker=feeder"}

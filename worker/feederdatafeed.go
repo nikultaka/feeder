@@ -81,13 +81,37 @@ func StartFeederWorker() {
 
 	PublishSymbolSheetData()
 
+	// TEST: Add a second BTCUSD entry with different expiry to test multiple expiry dates
+	testConfig := feederConfig{
+		InstrumentToken:     14536643,
+		ExchangeToken:       "985254",
+		TradingSymbol:       "BTCUSD",
+		TradingName:         "BTCUSD",
+		SubscribeSymbolName: "BTCUSD_MIX",
+		Exchange:            "CRYPTO",
+		Expiry:              "2025-12-31",
+	}
+	FeederConfigData["14536643_TEST"] = testConfig
+	log.Println("TEST: Added second BTCUSD entry with expiry 2025-12-31 for testing")
+
 	feederSymbols = []string{}
+	symbolSet := make(map[string]bool) // Track unique symbols for subscription
 	for _, row := range FeederConfigData {
 		// fmt.Println("row", row)
 		fmt.Println("row", row)
 		log.Println("row Feeder Worker.", row)
-		feederDgMap.Store(row.SubscribeSymbolName, row)
-		feederSymbols = append(feederSymbols, row.SubscribeSymbolName)
+
+		// Use composite key: SubscribeSymbolName + Expiry to handle multiple expiries
+		compositeKey := row.SubscribeSymbolName + "|" + row.Expiry
+		feederDgMap.Store(compositeKey, row)
+
+		// Only add unique subscribe symbols to avoid duplicates in subscription
+		if !symbolSet[row.SubscribeSymbolName] {
+			feederSymbols = append(feederSymbols, row.SubscribeSymbolName)
+			symbolSet[row.SubscribeSymbolName] = true
+		}
+
+		log.Printf("Stored feeder config with key: %s (Symbol: %s, Expiry: %s)", compositeKey, row.SubscribeSymbolName, row.Expiry)
 	}
 
 	ctx, cancel = context.WithCancel(context.Background())
@@ -198,11 +222,35 @@ func handleFeederMessage(message []byte) (FeederMarketData, error) {
 }
 func processFeederMarketData(data FeederMarketData) {
 	// log.Printf("Processing FeederMarketData: %+v", data)
-	log.Printf("Processing FeederMarketData: Symbol=%s, Name=%s", data.Symbol, data.SymbolMasterName)
-	value, _ := feederDgMap.Load(data.SymbolMasterName)
+	log.Printf("Processing FeederMarketData: Symbol=%s, Name=%s, Expiry=%s", data.Symbol, data.SymbolMasterName, data.Expiry)
+
+	// Use composite key to lookup: SymbolMasterName + Expiry
+	compositeKey := data.SymbolMasterName + "|" + data.Expiry
+	value, _ := feederDgMap.Load(compositeKey)
+
+	// If not found and expiry is "NO EXPIRY" or empty, try to find any matching symbol
+	if value == nil && (data.Expiry == "NO EXPIRY" || data.Expiry == "") {
+		log.Printf("Expiry not provided, searching for any config matching symbol: %s", data.SymbolMasterName)
+		// Iterate through all stored configs to find a match by symbol name
+		var foundConfig feederConfig
+		found := false
+		feederDgMap.Range(func(key, val interface{}) bool {
+			config := val.(feederConfig)
+			if config.SubscribeSymbolName == data.SymbolMasterName {
+				foundConfig = config
+				found = true
+				log.Printf("Found config for %s with expiry %s", data.SymbolMasterName, config.Expiry)
+				return false // Stop iteration
+			}
+			return true // Continue iteration
+		})
+		if found {
+			value = foundConfig
+		}
+	}
+
 	if value == nil {
-		//log.Println("Symbol not found in Feeder config, skipping processing.")
-		log.Printf("Symbol not found in Feeder config (looked up by name='%s'), skipping processing.", data.SymbolMasterName)
+		log.Printf("Symbol not found in Feeder config (looked up by key='%s'), skipping processing.", compositeKey)
 		return
 	}
 	feederData := value.(feederConfig)

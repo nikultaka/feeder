@@ -1,0 +1,2173 @@
+app --- &{0x140002e2588 0x140002e2588}
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+worker.Env.APIAddress --- localhost:8081
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (7 handlers)
+[GIN-debug] GET    /                         --> main.handleHome (7 handlers)
+[GIN-debug] GET    /status                   --> main.handleWorkerStatus (7 handlers)
+[GIN-debug] GET    /api-status               --> main.handleAPIStatus (7 handlers)
+[GIN-debug] GET    /update-config            --> main.handleUpdateConfig (7 handlers)
+[GIN-debug] PATCH  /start                    --> main.handleStartWorker (7 handlers)
+[GIN-debug] PATCH  /stop                     --> main.handleStopWorker (7 handlers)
+[GIN-debug] PATCH  /generate                 --> main.handleGenerateZerodhaAccessToken (7 handlers)
+[GIN-debug] GET    /fetch-symbols            --> main.handleFetchFeederSymbolList (7 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on localhost:8081
+/start
+admin SuperWorker@0109 true
+2025/12/20 12:18:34 clientRow[4]  . BTCUSD_MIX
+2025/12/20 12:18:34 clientRow[4]  . ETHUSDT
+2025/12/20 12:18:34 clientRow[4]  . SOLUSDT
+2025/12/20 12:18:34 clientRow[4]  . XRPUSDT
+2025/12/20 12:18:34 clientRow[4]  . LINKUSDT
+2025/12/20 12:18:34 clientRow[4]  . LTCUSDT
+2025/12/20 12:18:34 clientRow[4]  . BCHUSDT
+2025/12/20 12:18:34 clientRow[4]  . DOGEUSDT
+2025/12/20 12:18:34 clientRow[4]  . ADAUSDT
+2025/12/20 12:18:34 clientRow[4]  . BNBUSDT
+2025/12/20 12:18:34 clientRow[4]  . DOTUSDT
+2025/12/20 12:18:34 clientRow[4]  . ICPUSDT
+2025/12/20 12:18:34 clientRow[4]  . TRXUSDT
+2025/12/20 12:18:34 clientRow[4]  . XLMUSDT
+2025/12/20 12:18:34 clientRow[4]  . POLUSDT
+2025/12/20 12:18:34 clientRow[4]  . ETCUSDT
+2025/12/20 12:18:34 clientRow[4]  . BTCUSD_MIX
+2025-12-20 12:18:35 [1m[31mERR[0m[0m [PublishSymbolSheetData] [loadClientSheetDetailsConfig] loadClientAPIDetailsConfig [36merror=[0m[31m"strconv.Atoi: parsing \"State Bank of India\": invalid syntax"[0m
+2025/12/20 12:18:35 TEST: Added second BTCUSD entry with expiry 2025-12-31 for testing
+row {14536648 985259 LINKUSD LINKUSD LINKUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 row Feeder Worker. {14536648 985259 LINKUSD LINKUSD LINKUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 Stored feeder config with key: LINKUSDT|2025-12-31 (Symbol: LINKUSDT, Expiry: 2025-12-31)
+row {10536652 905263 DOTUSDT DOTUSDT DOTUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 row Feeder Worker. {10536652 905263 DOTUSDT DOTUSDT DOTUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 Stored feeder config with key: DOTUSDT|2025-12-31 (Symbol: DOTUSDT, Expiry: 2025-12-31)
+row {10536653 905264 ICPUSDT ICPUSDT ICPUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 row Feeder Worker. {10536653 905264 ICPUSDT ICPUSDT ICPUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 Stored feeder config with key: ICPUSDT|2025-12-31 (Symbol: ICPUSDT, Expiry: 2025-12-31)
+row {14536649 985260 LTCUSD LTCUSD LTCUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 row Feeder Worker. {14536649 985260 LTCUSD LTCUSD LTCUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 Stored feeder config with key: LTCUSDT|2025-12-31 (Symbol: LTCUSDT, Expiry: 2025-12-31)
+row {14536643 985254 BTCUSD BTCUSD BTCUSD_MIX CRYPTO 2025-12-31}
+2025/12/20 12:18:35 row Feeder Worker. {14536643 985254 BTCUSD BTCUSD BTCUSD_MIX CRYPTO 2025-12-31}
+2025/12/20 12:18:35 Stored feeder config with key: BTCUSD_MIX|2025-12-31 (Symbol: BTCUSD_MIX, Expiry: 2025-12-31)
+row {10536655 905266 XLMUSDT XLMUSDT XLMUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 row Feeder Worker. {10536655 905266 XLMUSDT XLMUSDT XLMUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 Stored feeder config with key: XLMUSDT|2025-12-31 (Symbol: XLMUSDT, Expiry: 2025-12-31)
+row {10536657 905268 ETCUSDT ETCUSDT ETCUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 row Feeder Worker. {10536657 905268 ETCUSDT ETCUSDT ETCUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 Stored feeder config with key: ETCUSDT|2025-12-31 (Symbol: ETCUSDT, Expiry: 2025-12-31)
+row {14536644 985255 BTCUSD BTCUSD BTCUSD_MIX CRYPTO 2026-12-31}
+2025/12/20 12:18:35 row Feeder Worker. {14536644 985255 BTCUSD BTCUSD BTCUSD_MIX CRYPTO 2026-12-31}
+2025/12/20 12:18:35 Stored feeder config with key: BTCUSD_MIX|2026-12-31 (Symbol: BTCUSD_MIX, Expiry: 2026-12-31)
+row {14536645 985256 ETHUSD ETHUSD ETHUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 row Feeder Worker. {14536645 985256 ETHUSD ETHUSD ETHUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 Stored feeder config with key: ETHUSDT|2025-12-31 (Symbol: ETHUSDT, Expiry: 2025-12-31)
+row {14536646 985257 SOLUSD SOLUSD SOLUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 row Feeder Worker. {14536646 985257 SOLUSD SOLUSD SOLUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 Stored feeder config with key: SOLUSDT|2025-12-31 (Symbol: SOLUSDT, Expiry: 2025-12-31)
+row {14536647 985258 XRPUSD XRPUSD XRPUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 row Feeder Worker. {14536647 985258 XRPUSD XRPUSD XRPUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 Stored feeder config with key: XRPUSDT|2025-12-31 (Symbol: XRPUSDT, Expiry: 2025-12-31)
+row {14536555 985125 BCHUSD BCHUSD BCHUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 row Feeder Worker. {14536555 985125 BCHUSD BCHUSD BCHUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 Stored feeder config with key: BCHUSDT|2025-12-31 (Symbol: BCHUSDT, Expiry: 2025-12-31)
+row {14536650 985261 DOGUSD DOGUSD DOGEUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 row Feeder Worker. {14536650 985261 DOGUSD DOGUSD DOGEUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 Stored feeder config with key: DOGEUSDT|2025-12-31 (Symbol: DOGEUSDT, Expiry: 2025-12-31)
+row {14536651 985262 ADAUSD ADAUSD ADAUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 row Feeder Worker. {14536651 985262 ADAUSD ADAUSD ADAUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 Stored feeder config with key: ADAUSDT|2025-12-31 (Symbol: ADAUSDT, Expiry: 2025-12-31)
+row {10536651 905262 BNBUSDT BNBUSDT BNBUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 row Feeder Worker. {10536651 905262 BNBUSDT BNBUSDT BNBUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 Stored feeder config with key: BNBUSDT|2025-12-31 (Symbol: BNBUSDT, Expiry: 2025-12-31)
+row {10536654 905265 TRXUSDT TRXUSDT TRXUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 row Feeder Worker. {10536654 905265 TRXUSDT TRXUSDT TRXUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 Stored feeder config with key: TRXUSDT|2025-12-31 (Symbol: TRXUSDT, Expiry: 2025-12-31)
+row {10536656 905267 POLUSDT POLUSDT POLUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 row Feeder Worker. {10536656 905267 POLUSDT POLUSDT POLUSDT CRYPTO 2025-12-31}
+2025/12/20 12:18:35 Stored feeder config with key: POLUSDT|2025-12-31 (Symbol: POLUSDT, Expiry: 2025-12-31)
+2025/12/20 12:18:35 Starting Feeder Worker.
+2025/12/20 12:18:35 Feeder Worker started.
+2025/12/20 12:18:35 Connecting to Feeder WebSocket.
+2025/12/20 12:18:36 Connecting to Feeder WebSocket.
+2025/12/20 12:18:36 Connected to Feeder WebSocket.
+2025/12/20 12:18:36 Subscribing to Feeder symbols: [LINKUSDT DOTUSDT ICPUSDT LTCUSDT BTCUSD_MIX XLMUSDT ETCUSDT ETHUSDT SOLUSDT XRPUSDT BCHUSDT DOGEUSDT ADAUSDT BNBUSDT TRXUSDT POLUSDT]
+2025/12/20 12:18:36 Subscription message sent.
+2025/12/20 12:18:36 Processing FeederMarketData: Symbol=, Name=, Expiry=
+2025/12/20 12:18:36 Expiry not provided, searching for any config matching symbol: 
+2025/12/20 12:18:36 Symbol not found in Feeder config (looked up by key='|'), skipping processing.
+2025/12/20 12:18:37 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:37 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:18:37 Found config for ETHUSDT with expiry 2025-12-31
+{2980.92 2980.93 0 0 2980.92  0 0 0 0 0 0 0.034 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:18:37 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:18:37 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:38 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:18:38 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:18:38 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88307.84 88307.85 0 0 88307.84  0 0 0 0 0 0 2.4e-05 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:18:38 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:18:38 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:38 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:38 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:18:38 Processing FeederMarketData: Symbol=, Name=LTCUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:38 Expiry not provided, searching for any config matching symbol: LTCUSDT
+2025/12/20 12:18:38 Found config for LTCUSDT with expiry 2025-12-31
+2025/12/20 12:18:38 Found config for ETHUSDT with expiry 2025-12-31
+{76.77 76.78 0 0 76.77  0 0 0 0 0 0 0.111682 0 0 0 LTCUSD {[] []}}
+2025/12/20 12:18:38 Saving tick - Symbol: LTCUSD, Expiry: 2025-12-31
+{2980.92 2980.93 0 0 2980.93  0 0 0 0 0 0 0.034 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:18:38 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:18:38 Tick saved successfully for symbol: LTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:38 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+[GIN] 2025/12/20 - 12:18:38 | 200 |  7.224433459s |       127.0.0.1 | PATCH    "/start?worker=feeder"
+2025/12/20 12:18:39 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:39 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:18:39 Found config for ETHUSDT with expiry 2025-12-31
+{2980.92 2980.93 0 0 2980.92  0 0 0 0 0 0 0.034 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:18:39 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:18:39 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:40 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:40 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:18:40 Found config for SOLUSDT with expiry 2025-12-31
+2025/12/20 12:18:40 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:18:40 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+{126.33 126.34 0 0 126.34  0 0 0 0 0 0 0.153148 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:18:40 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88296.57 88296.58 0 0 88307.84  0 0 0 0 0 0 2.4e-05 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:18:40 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:18:40 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:18:40 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:18:40 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88296.57 88296.58 0 0 88306.2  0 0 0 0 0 0 0.002139 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:18:40 Processing FeederMarketData: Symbol=, Name=XLMUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:40 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:18:40 Processing FeederMarketData: Symbol=, Name=XLMUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:40 Expiry not provided, searching for any config matching symbol: XLMUSDT
+2025/12/20 12:18:40 Found config for XLMUSDT with expiry 2025-12-31
+2025/12/20 12:18:40 Processing FeederMarketData: Symbol=, Name=LINKUSDT, Expiry=NO EXPIRY
+{0.2198 0.2199 0 0 0.2199  0 0 0 0 0 0 1191.663575 0 0 0 XLMUSDT {[] []}}
+2025/12/20 12:18:40 Expiry not provided, searching for any config matching symbol: LINKUSDT
+2025/12/20 12:18:40 Found config for LINKUSDT with expiry 2025-12-31
+2025/12/20 12:18:40 Processing FeederMarketData: Symbol=, Name=ETCUSDT, Expiry=NO EXPIRY
+{12.495 12.496 0 0 12.495  0 0 0 0 0 0 0.150001 0 0 0 LINKUSD {[] []}}
+2025/12/20 12:18:40 Expiry not provided, searching for any config matching symbol: ETCUSDT
+2025/12/20 12:18:40 Found config for ETCUSDT with expiry 2025-12-31
+{12.4 12.42 0 0 12.41  0 0 0 0 0 0 0.805473 0 0 0 ETCUSDT {[] []}}
+2025/12/20 12:18:40 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:18:40 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:18:40 Found config for BTCUSD_MIX with expiry 2025-12-31
+2025/12/20 12:18:40 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:40 Expiry not provided, searching for any config matching symbol: XRPUSDT
+{88296.57 88296.58 0 0 88296.57  0 0 0 0 0 0 0.002139 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:18:40 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:18:40 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+{1.9142 1.9144 0 0 1.9142  0 0 0 0 0 0 5.224521 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:18:40 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:18:40 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:40 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:18:40 Found config for XRPUSDT with expiry 2025-12-31
+{1.914 1.9141 0 0 1.9141  0 0 0 0 0 0 954.7 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:18:40 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:40 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:18:40 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:18:40 Expiry not provided, searching for any config matching symbol: XLMUSDT
+2025/12/20 12:18:40 Found config for XLMUSDT with expiry 2025-12-31
+{0.2198 0.2199 0 0 0.21995  0 0 0 0 0 0 1191.663575 0 0 0 XLMUSDT {[] []}}
+2025/12/20 12:18:40 Saving tick - Symbol: XLMUSDT, Expiry: 2025-12-31
+2025/12/20 12:18:40 Saving tick - Symbol: LINKUSD, Expiry: 2025-12-31
+2025/12/20 12:18:40 Saving tick - Symbol: ETCUSDT, Expiry: 2025-12-31
+2025/12/20 12:18:40 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:18:40 Found config for XRPUSDT with expiry 2025-12-31
+{1.9143 1.9144 0 0 1.9143  0 0 0 0 0 0 5.224521 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:18:40 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:18:40 Processing FeederMarketData: Symbol=, Name=ICPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:40 Expiry not provided, searching for any config matching symbol: ICPUSDT
+2025/12/20 12:18:40 Found config for ICPUSDT with expiry 2025-12-31
+{2.902 2.903 0 0 2.904  0 0 0 0 0 0 4.799038 0 0 0 ICPUSDT {[] []}}
+2025/12/20 12:18:40 Saving tick - Symbol: ICPUSDT, Expiry: 2025-12-31
+2025/12/20 12:18:40 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:18:40 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:18:40 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:18:40 Saving tick - Symbol: XLMUSDT, Expiry: 2025-12-31
+{1.9143 1.9144 0 0 1.9142  0 0 0 0 0 0 5.224521 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:18:40 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:18:40 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:40 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:40 Tick saved successfully for symbol: XLMUSDT with expiry_date: 2025-12-31
+2025/12/20 12:18:40 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:40 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:40 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:40 Tick saved successfully for symbol: LINKUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:40 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:40 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:40 Tick saved successfully for symbol: XLMUSDT with expiry_date: 2025-12-31
+2025/12/20 12:18:40 Tick saved successfully for symbol: ICPUSDT with expiry_date: 2025-12-31
+2025/12/20 12:18:40 Tick saved successfully for symbol: ETCUSDT with expiry_date: 2025-12-31
+2025/12/20 12:18:40 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:41 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:41 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:18:41 Found config for SOLUSDT with expiry 2025-12-31
+{126.33 126.34 0 0 126.33  0 0 0 0 0 0 0.135217 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:18:41 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:18:41 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:41 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:41 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:18:41 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:41 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:18:41 Found config for ETHUSDT with expiry 2025-12-31
+2025/12/20 12:18:41 Found config for XRPUSDT with expiry 2025-12-31
+{2980.92 2980.93 0 0 2980.93  0 0 0 0 0 0 0.001282 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:18:41 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+{1.9144 1.9145 0 0 1.9143  0 0 0 0 0 0 5.224521 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:18:41 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:18:41 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:41 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:42 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:42 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:18:42 Found config for ETHUSDT with expiry 2025-12-31
+{2980.92 2980.93 0 0 2980.92  0 0 0 0 0 0 0.001282 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:18:42 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:18:42 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:43 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:43 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:18:43 Found config for SOLUSDT with expiry 2025-12-31
+2025/12/20 12:18:43 Processing FeederMarketData: Symbol=, Name=ICPUSDT, Expiry=NO EXPIRY
+{126.33 126.34 0 0 126.34  0 0 0 0 0 0 0.135217 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:18:43 Expiry not provided, searching for any config matching symbol: ICPUSDT
+2025/12/20 12:18:43 Found config for ICPUSDT with expiry 2025-12-31
+2025/12/20 12:18:43 Processing FeederMarketData: Symbol=, Name=ICPUSDT, Expiry=NO EXPIRY
+{2.903 2.904 0 0 2.903  0 0 0 0 0 0 4.799038 0 0 0 ICPUSDT {[] []}}
+2025/12/20 12:18:43 Expiry not provided, searching for any config matching symbol: ICPUSDT
+2025/12/20 12:18:43 Found config for ICPUSDT with expiry 2025-12-31
+{2.902 2.903 0 0 2.903  0 0 0 0 0 0 4.799038 0 0 0 ICPUSDT {[] []}}
+2025/12/20 12:18:43 Saving tick - Symbol: ICPUSDT, Expiry: 2025-12-31
+2025/12/20 12:18:43 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:18:43 Saving tick - Symbol: ICPUSDT, Expiry: 2025-12-31
+2025/12/20 12:18:43 Tick saved successfully for symbol: ICPUSDT with expiry_date: 2025-12-31
+2025/12/20 12:18:43 Tick saved successfully for symbol: ICPUSDT with expiry_date: 2025-12-31
+2025/12/20 12:18:43 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:44 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:18:44 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:18:44 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88296.57 88296.58 0 0 88296.58  0 0 0 0 0 0 1.5e-05 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:18:44 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:18:44 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:44 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:44 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:18:44 Found config for ETHUSDT with expiry 2025-12-31
+{2980.92 2980.93 0 0 2980.93  0 0 0 0 0 0 0.006 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:18:44 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:18:44 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:44 Processing FeederMarketData: Symbol=, Name=ETCUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:44 Expiry not provided, searching for any config matching symbol: ETCUSDT
+2025/12/20 12:18:44 Found config for ETCUSDT with expiry 2025-12-31
+{12.41 12.42 0 0 12.41  0 0 0 0 0 0 0.805473 0 0 0 ETCUSDT {[] []}}
+2025/12/20 12:18:44 Saving tick - Symbol: ETCUSDT, Expiry: 2025-12-31
+2025/12/20 12:18:44 Tick saved successfully for symbol: ETCUSDT with expiry_date: 2025-12-31
+2025/12/20 12:18:45 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:45 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:18:45 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:45 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:18:45 Found config for SOLUSDT with expiry 2025-12-31
+{126.33 126.34 0 0 126.33  0 0 0 0 0 0 0.135217 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:18:45 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:18:45 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:18:45 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88296.57 88296.58 0 0 88296.57  0 0 0 0 0 0 1.5e-05 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:18:45 Found config for ETHUSDT with expiry 2025-12-31
+{2980.92 2980.93 0 0 2980.92  0 0 0 0 0 0 0.006 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:18:45 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:18:45 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:18:45 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:18:45 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:45 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:45 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:46 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:46 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:18:46 Found config for SOLUSDT with expiry 2025-12-31
+{126.33 126.34 0 0 126.34  0 0 0 0 0 0 0.135217 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:18:46 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:18:46 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:46 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:18:46 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:18:46 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88296.57 88296.58 0 0 88296.58  0 0 0 0 0 0 1.5e-05 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:18:46 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:18:46 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:46 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:46 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:18:46 Found config for SOLUSDT with expiry 2025-12-31
+{126.33 126.34 0 0 126.33  0 0 0 0 0 0 0.306522 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:18:46 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:18:46 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:46 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:46 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:18:46 Found config for ETHUSDT with expiry 2025-12-31
+{2980.66 2980.67 0 0 2980.92  0 0 0 0 0 0 0.006608 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:18:46 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:18:46 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:47 Processing FeederMarketData: Symbol=, Name=ETCUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:47 Expiry not provided, searching for any config matching symbol: ETCUSDT
+2025/12/20 12:18:47 Found config for ETCUSDT with expiry 2025-12-31
+{12.4 12.42 0 0 12.41  0 0 0 0 0 0 0.805473 0 0 0 ETCUSDT {[] []}}
+2025/12/20 12:18:47 Saving tick - Symbol: ETCUSDT, Expiry: 2025-12-31
+2025/12/20 12:18:47 Tick saved successfully for symbol: ETCUSDT with expiry_date: 2025-12-31
+2025/12/20 12:18:47 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:47 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:18:47 Found config for ETHUSDT with expiry 2025-12-31
+2025/12/20 12:18:47 Processing FeederMarketData: Symbol=, Name=ETCUSDT, Expiry=NO EXPIRY
+{2980.66 2980.67 0 0 2980.67  0 0 0 0 0 0 0.006608 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:18:47 Expiry not provided, searching for any config matching symbol: ETCUSDT
+2025/12/20 12:18:47 Found config for ETCUSDT with expiry 2025-12-31
+{12.41 12.42 0 0 12.41  0 0 0 0 0 0 0.805473 0 0 0 ETCUSDT {[] []}}
+2025/12/20 12:18:47 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:18:47 Saving tick - Symbol: ETCUSDT, Expiry: 2025-12-31
+2025/12/20 12:18:47 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:47 Tick saved successfully for symbol: ETCUSDT with expiry_date: 2025-12-31
+2025/12/20 12:18:47 Processing FeederMarketData: Symbol=, Name=TRXUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:47 Expiry not provided, searching for any config matching symbol: TRXUSDT
+2025/12/20 12:18:47 Found config for TRXUSDT with expiry 2025-12-31
+{0.279 0.27902 0 0 0.279  0 0 0 0 0 0 10 0 0 0 TRXUSDT {[] []}}
+2025/12/20 12:18:47 Saving tick - Symbol: TRXUSDT, Expiry: 2025-12-31
+2025/12/20 12:18:47 Tick saved successfully for symbol: TRXUSDT with expiry_date: 2025-12-31
+2025/12/20 12:18:48 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:18:48 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:18:48 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88296.57 88296.58 0 0 88296.57  0 0 0 0 0 0 1.5e-05 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:18:48 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:18:48 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:49 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:49 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:18:49 Found config for ETHUSDT with expiry 2025-12-31
+{2980.66 2980.67 0 0 2980.66  0 0 0 0 0 0 0.006608 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:18:49 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:18:49 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:49 Processing FeederMarketData: Symbol=, Name=LTCUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:49 Expiry not provided, searching for any config matching symbol: LTCUSDT
+2025/12/20 12:18:49 Found config for LTCUSDT with expiry 2025-12-31
+{76.77 76.78 0 0 76.78  0 0 0 0 0 0 0.111682 0 0 0 LTCUSD {[] []}}
+2025/12/20 12:18:49 Saving tick - Symbol: LTCUSD, Expiry: 2025-12-31
+2025/12/20 12:18:49 Tick saved successfully for symbol: LTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:49 Processing FeederMarketData: Symbol=, Name=ADAUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:49 Expiry not provided, searching for any config matching symbol: ADAUSDT
+2025/12/20 12:18:49 Found config for ADAUSDT with expiry 2025-12-31
+{0.3732 0.3733 0 0 0.3732  0 0 0 0 0 0 24.773 0 0 0 ADAUSD {[] []}}
+2025/12/20 12:18:49 Saving tick - Symbol: ADAUSD, Expiry: 2025-12-31
+2025/12/20 12:18:49 Tick saved successfully for symbol: ADAUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:50 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:18:50 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:18:50 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88296.57 88296.58 0 0 88296.58  0 0 0 0 0 0 1.5e-05 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:18:50 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:18:50 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:51 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:18:51 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:18:51 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88296.57 88296.58 0 0 88296.57  0 0 0 0 0 0 1.5e-05 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:18:51 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:18:51 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:52 Processing FeederMarketData: Symbol=, Name=BCHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:52 Expiry not provided, searching for any config matching symbol: BCHUSDT
+2025/12/20 12:18:52 Found config for BCHUSDT with expiry 2025-12-31
+{605.5 605.6 0 0 605.6  0 0 0 0 0 0 0.016257 0 0 0 BCHUSD {[] []}}
+2025/12/20 12:18:52 Saving tick - Symbol: BCHUSD, Expiry: 2025-12-31
+2025/12/20 12:18:52 Tick saved successfully for symbol: BCHUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:52 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:52 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:18:52 Found config for ETHUSDT with expiry 2025-12-31
+2025/12/20 12:18:52 Processing FeederMarketData: Symbol=, Name=BCHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:52 Expiry not provided, searching for any config matching symbol: BCHUSDT
+{2980.66 2980.67 0 0 2980.67  0 0 0 0 0 0 0.002723 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:18:52 Found config for BCHUSDT with expiry 2025-12-31
+{605.4 605.6 0 0 605.6  0 0 0 0 0 0 2.17531 0 0 0 BCHUSD {[] []}}
+2025/12/20 12:18:52 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:18:52 Saving tick - Symbol: BCHUSD, Expiry: 2025-12-31
+2025/12/20 12:18:52 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:52 Tick saved successfully for symbol: BCHUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:53 Processing FeederMarketData: Symbol=, Name=BCHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:53 Expiry not provided, searching for any config matching symbol: BCHUSDT
+2025/12/20 12:18:53 Found config for BCHUSDT with expiry 2025-12-31
+{605.5 605.6 0 0 605.6  0 0 0 0 0 0 2.17531 0 0 0 BCHUSD {[] []}}
+2025/12/20 12:18:53 Saving tick - Symbol: BCHUSD, Expiry: 2025-12-31
+2025/12/20 12:18:53 Tick saved successfully for symbol: BCHUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:55 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:55 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:18:55 Found config for XRPUSDT with expiry 2025-12-31
+{1.9144 1.9145 0 0 1.9144  0 0 0 0 0 0 1 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:18:55 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:18:55 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:55 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:55 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:18:55 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:18:55 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:18:55 Found config for ETHUSDT with expiry 2025-12-31
+2025/12/20 12:18:55 Found config for BTCUSD_MIX with expiry 2025-12-31
+{2980.66 2980.67 0 0 2980.66  0 0 0 0 0 0 0.002723 0 0 0 ETHUSD {[] []}}
+{88296.57 88296.58 0 0 88296.58  0 0 0 0 0 0 0.00022 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:18:55 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:18:55 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:18:55 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:55 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:56 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:18:56 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:18:56 Found config for BTCUSD_MIX with expiry 2026-12-31
+{88295.81 88295.82 0 0 88296.58  0 0 0 0 0 0 0.00022 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:18:56 Saving tick - Symbol: BTCUSD, Expiry: 2026-12-31
+2025/12/20 12:18:56 Tick saved successfully for symbol: BTCUSD with expiry_date: 2026-12-31
+2025/12/20 12:18:56 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:18:56 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:18:56 Found config for BTCUSD_MIX with expiry 2026-12-31
+2025/12/20 12:18:56 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:18:56 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+{88293.4 88293.41 0 0 88296.58  0 0 0 0 0 0 0.00022 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:18:56 Found config for BTCUSD_MIX with expiry 2026-12-31
+{88293.6 88293.61 0 0 88296.58  0 0 0 0 0 0 0.00022 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:18:56 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:18:56 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:18:56 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:56 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:18:56 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:18:56 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:18:56 Saving tick - Symbol: BTCUSD, Expiry: 2026-12-31
+2025/12/20 12:18:56 Saving tick - Symbol: BTCUSD, Expiry: 2026-12-31
+2025/12/20 12:18:56 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88292.49 88292.5 0 0 88296.58  0 0 0 0 0 0 0.00022 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:18:56 Found config for SOLUSDT with expiry 2025-12-31
+{126.32 126.33 0 0 126.33  0 0 0 0 0 0 1.04028 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:18:56 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88292.93 88292.94 0 0 88296.58  0 0 0 0 0 0 0.00022 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:18:56 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:18:56 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:18:56 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:18:56 Tick saved successfully for symbol: BTCUSD with expiry_date: 2026-12-31
+2025/12/20 12:18:56 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:56 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:56 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:56 Tick saved successfully for symbol: BTCUSD with expiry_date: 2026-12-31
+2025/12/20 12:18:56 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:56 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:18:56 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:18:56 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:18:56 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:18:56 Processing FeederMarketData: Symbol=, Name=LINKUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:56 Expiry not provided, searching for any config matching symbol: LINKUSDT
+2025/12/20 12:18:56 Found config for LINKUSDT with expiry 2025-12-31
+2025/12/20 12:18:56 Found config for BNBUSDT with expiry 2025-12-31
+{12.494 12.495 0 0 12.495  0 0 0 0 0 0 0.150001 0 0 0 LINKUSD {[] []}}
+{853.6 853.68 0 0 853.7  0 0 0 0 0 0 0.001054 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:18:56 Saving tick - Symbol: LINKUSD, Expiry: 2025-12-31
+2025/12/20 12:18:56 Found config for BTCUSD_MIX with expiry 2026-12-31
+{88288.4 88292.5 0 0 88288.4  0 0 0 0 0 0 0.004249 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:18:56 Saving tick - Symbol: BTCUSD, Expiry: 2026-12-31
+2025/12/20 12:18:56 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:18:56 Found config for BTCUSD_MIX with expiry 2026-12-31
+{88292.49 88292.5 0 0 88292.5  0 0 0 0 0 0 0.000449 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:18:56 Saving tick - Symbol: BTCUSD, Expiry: 2026-12-31
+2025/12/20 12:18:56 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:18:56 Tick saved successfully for symbol: BTCUSD with expiry_date: 2026-12-31
+2025/12/20 12:18:56 Tick saved successfully for symbol: LINKUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:56 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:18:56 Tick saved successfully for symbol: BTCUSD with expiry_date: 2026-12-31
+2025/12/20 12:18:57 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:57 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:18:57 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:18:57 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+{1.9142 1.9144 0 0 1.9143  0 0 0 0 0 0 5.223841 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:18:57 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:18:57 Found config for BNBUSDT with expiry 2025-12-31
+{853.6 853.68 0 0 853.68  0 0 0 0 0 0 0.001054 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:18:57 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:18:57 Processing FeederMarketData: Symbol=, Name=ETCUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:57 Expiry not provided, searching for any config matching symbol: ETCUSDT
+2025/12/20 12:18:57 Found config for ETCUSDT with expiry 2025-12-31
+2025/12/20 12:18:57 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+{12.4 12.42 0 0 12.41  0 0 0 0 0 0 0.805473 0 0 0 ETCUSDT {[] []}}
+2025/12/20 12:18:57 Saving tick - Symbol: ETCUSDT, Expiry: 2025-12-31
+2025/12/20 12:18:57 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:57 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:18:57 Tick saved successfully for symbol: ETCUSDT with expiry_date: 2025-12-31
+2025/12/20 12:18:57 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:57 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:18:57 Processing FeederMarketData: Symbol=, Name=XLMUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:57 Expiry not provided, searching for any config matching symbol: XLMUSDT
+2025/12/20 12:18:57 Found config for XLMUSDT with expiry 2025-12-31
+2025/12/20 12:18:57 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+{0.2198 0.21989 0 0 0.2199  0 0 0 0 0 0 1191.663575 0 0 0 XLMUSDT {[] []}}
+2025/12/20 12:18:57 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:18:57 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88288.4 88288.5 0 0 88288.4  0 0 0 0 0 0 0.004249 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:18:57 Found config for XRPUSDT with expiry 2025-12-31
+{1.9142 1.9143 0 0 1.9143  0 0 0 0 0 0 5.223841 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:18:57 Saving tick - Symbol: XLMUSDT, Expiry: 2025-12-31
+2025/12/20 12:18:57 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:18:57 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:18:57 Tick saved successfully for symbol: XLMUSDT with expiry_date: 2025-12-31
+2025/12/20 12:18:57 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:57 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:57 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:57 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:18:57 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:18:57 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+{1.9142 1.9143 0 0 1.9142  0 0 0 0 0 0 32.125 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:18:57 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:18:57 Found config for ETHUSDT with expiry 2025-12-31
+{2980.66 2980.67 0 0 2980.67  0 0 0 0 0 0 0.012954 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:18:57 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:57 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:18:57 Found config for SOLUSDT with expiry 2025-12-31
+2025/12/20 12:18:57 Processing FeederMarketData: Symbol=, Name=ETCUSDT, Expiry=NO EXPIRY
+{126.32 126.33 0 0 126.32  0 0 0 0 0 0 0.142914 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:18:57 Expiry not provided, searching for any config matching symbol: ETCUSDT
+2025/12/20 12:18:57 Found config for ETCUSDT with expiry 2025-12-31
+{12.41 12.42 0 0 12.41  0 0 0 0 0 0 0.805473 0 0 0 ETCUSDT {[] []}}
+2025/12/20 12:18:57 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:18:57 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:18:57 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:18:57 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:18:57 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:18:57 Saving tick - Symbol: ETCUSDT, Expiry: 2025-12-31
+2025/12/20 12:18:57 Found config for BTCUSD_MIX with expiry 2026-12-31
+{88288.4 88288.5 0 0 88288.5  0 0 0 0 0 0 1e-05 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:18:57 Saving tick - Symbol: BTCUSD, Expiry: 2026-12-31
+2025/12/20 12:18:57 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:57 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:57 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:57 Tick saved successfully for symbol: BTCUSD with expiry_date: 2026-12-31
+2025/12/20 12:18:57 Tick saved successfully for symbol: ETCUSDT with expiry_date: 2025-12-31
+2025/12/20 12:18:58 Processing FeederMarketData: Symbol=, Name=LINKUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:58 Expiry not provided, searching for any config matching symbol: LINKUSDT
+2025/12/20 12:18:58 Found config for LINKUSDT with expiry 2025-12-31
+{12.495 12.496 0 0 12.495  0 0 0 0 0 0 0.150001 0 0 0 LINKUSD {[] []}}
+2025/12/20 12:18:58 Saving tick - Symbol: LINKUSD, Expiry: 2025-12-31
+2025/12/20 12:18:58 Tick saved successfully for symbol: LINKUSD with expiry_date: 2025-12-31
+2025/12/20 12:18:58 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:18:58 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:18:58 Found config for ETHUSDT with expiry 2025-12-31
+{2980.66 2980.67 0 0 2980.66  0 0 0 0 0 0 0.012954 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:18:58 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:18:58 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:00 Processing FeederMarketData: Symbol=, Name=LINKUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:00 Expiry not provided, searching for any config matching symbol: LINKUSDT
+2025/12/20 12:19:00 Found config for LINKUSDT with expiry 2025-12-31
+2025/12/20 12:19:00 Processing FeederMarketData: Symbol=, Name=TRXUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:00 Expiry not provided, searching for any config matching symbol: TRXUSDT
+{12.49 12.496 0 0 12.49  0 0 0 0 0 0 0.150001 0 0 0 LINKUSD {[] []}}
+2025/12/20 12:19:00 Found config for TRXUSDT with expiry 2025-12-31
+{0.279 0.27902 0 0 0.27901  0 0 0 0 0 0 257.334336 0 0 0 TRXUSDT {[] []}}
+2025/12/20 12:19:00 Saving tick - Symbol: LINKUSD, Expiry: 2025-12-31
+2025/12/20 12:19:00 Saving tick - Symbol: TRXUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:00 Tick saved successfully for symbol: LINKUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:00 Tick saved successfully for symbol: TRXUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:00 Processing FeederMarketData: Symbol=, Name=POLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:00 Expiry not provided, searching for any config matching symbol: POLUSDT
+2025/12/20 12:19:00 Found config for POLUSDT with expiry 2025-12-31
+{0.1096 0.1097 0 0 0.1096  0 0 0 0 0 0 945 0 0 0 POLUSDT {[] []}}
+2025/12/20 12:19:00 Saving tick - Symbol: POLUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:00 Tick saved successfully for symbol: POLUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:01 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:01 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:01 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:01 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:01 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:19:01 Found config for ETHUSDT with expiry 2025-12-31
+{1.9143 1.9144 0 0 1.9142  0 0 0 0 0 0 32.125 0 0 0 XRPUSD {[] []}}
+{2980.66 2980.67 0 0 2980.67  0 0 0 0 0 0 0.012954 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:01 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:01 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:01 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:01 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:02 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:02 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:02 Found config for ETHUSDT with expiry 2025-12-31
+{2980.66 2980.67 0 0 2980.66  0 0 0 0 0 0 0.012954 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:02 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:02 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:02 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:02 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:02 Found config for BNBUSDT with expiry 2025-12-31
+{853.6 853.68 0 0 853.67  0 0 0 0 0 0 0.001054 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:02 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:02 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:02 Processing FeederMarketData: Symbol=, Name=TRXUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:02 Expiry not provided, searching for any config matching symbol: TRXUSDT
+2025/12/20 12:19:02 Found config for TRXUSDT with expiry 2025-12-31
+{0.279 0.27902 0 0 0.279  0 0 0 0 0 0 257.334336 0 0 0 TRXUSDT {[] []}}
+2025/12/20 12:19:02 Saving tick - Symbol: TRXUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:02 Tick saved successfully for symbol: TRXUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:03 Processing FeederMarketData: Symbol=, Name=TRXUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:03 Expiry not provided, searching for any config matching symbol: TRXUSDT
+2025/12/20 12:19:03 Found config for TRXUSDT with expiry 2025-12-31
+{0.279 0.27902 0 0 0.27901  0 0 0 0 0 0 257.334336 0 0 0 TRXUSDT {[] []}}
+2025/12/20 12:19:03 Saving tick - Symbol: TRXUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:03 Tick saved successfully for symbol: TRXUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:07 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:07 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:07 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:19:07 Processing FeederMarketData: Symbol=, Name=XLMUSDT, Expiry=NO EXPIRY
+{1.9143 1.9145 0 0 1.9144  0 0 0 0 0 0 4.848789 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:07 Expiry not provided, searching for any config matching symbol: XLMUSDT
+2025/12/20 12:19:07 Found config for XLMUSDT with expiry 2025-12-31
+{0.2198 0.2199 0 0 0.2199  0 0 0 0 0 0 1191.663575 0 0 0 XLMUSDT {[] []}}
+2025/12/20 12:19:07 Processing FeederMarketData: Symbol=, Name=DOGEUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:07 Expiry not provided, searching for any config matching symbol: DOGEUSDT
+2025/12/20 12:19:07 Processing FeederMarketData: Symbol=, Name=TRXUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:07 Expiry not provided, searching for any config matching symbol: TRXUSDT
+2025/12/20 12:19:07 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:07 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:07 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:19:07 Processing FeederMarketData: Symbol=, Name=LTCUSDT, Expiry=NO EXPIRY
+{1.9144 1.9145 0 0 1.9144  0 0 0 0 0 0 4.848789 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:07 Expiry not provided, searching for any config matching symbol: LTCUSDT
+2025/12/20 12:19:07 Found config for LTCUSDT with expiry 2025-12-31
+{76.78 76.79 0 0 76.78  0 0 0 0 0 0 0.111682 0 0 0 LTCUSD {[] []}}
+2025/12/20 12:19:07 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:07 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:07 Saving tick - Symbol: XLMUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:07 Found config for DOGEUSDT with expiry 2025-12-31
+{0.13128 0.13129 0 0 0.13127  0 0 0 0 0 0 10 0 0 0 DOGUSD {[] []}}
+2025/12/20 12:19:07 Saving tick - Symbol: DOGUSD, Expiry: 2025-12-31
+2025/12/20 12:19:07 Found config for TRXUSDT with expiry 2025-12-31
+{0.279 0.27902 0 0 0.27902  0 0 0 0 0 0 20 0 0 0 TRXUSDT {[] []}}
+2025/12/20 12:19:07 Processing FeederMarketData: Symbol=, Name=DOGEUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:07 Expiry not provided, searching for any config matching symbol: DOGEUSDT
+2025/12/20 12:19:07 Found config for DOGEUSDT with expiry 2025-12-31
+{0.13129 0.1313 0 0 0.13127  0 0 0 0 0 0 10 0 0 0 DOGUSD {[] []}}
+2025/12/20 12:19:07 Saving tick - Symbol: DOGUSD, Expiry: 2025-12-31
+2025/12/20 12:19:07 Saving tick - Symbol: LTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:07 Saving tick - Symbol: TRXUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:07 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:07 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:07 Tick saved successfully for symbol: XLMUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:07 Tick saved successfully for symbol: DOGUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:07 Tick saved successfully for symbol: DOGUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:07 Tick saved successfully for symbol: LTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:07 Tick saved successfully for symbol: TRXUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:07 Processing FeederMarketData: Symbol=, Name=ICPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:07 Expiry not provided, searching for any config matching symbol: ICPUSDT
+2025/12/20 12:19:07 Processing FeederMarketData: Symbol=, Name=ICPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:07 Processing FeederMarketData: Symbol=, Name=DOGEUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:07 Expiry not provided, searching for any config matching symbol: DOGEUSDT
+2025/12/20 12:19:07 Found config for DOGEUSDT with expiry 2025-12-31
+2025/12/20 12:19:07 Expiry not provided, searching for any config matching symbol: ICPUSDT
+{0.13129 0.1313 0 0 0.13129  0 0 0 0 0 0 99.957098 0 0 0 DOGUSD {[] []}}
+2025/12/20 12:19:07 Found config for ICPUSDT with expiry 2025-12-31
+{2.903 2.904 0 0 2.904  0 0 0 0 0 0 4.799038 0 0 0 ICPUSDT {[] []}}
+2025/12/20 12:19:07 Saving tick - Symbol: DOGUSD, Expiry: 2025-12-31
+2025/12/20 12:19:07 Found config for ICPUSDT with expiry 2025-12-31
+{2.904 2.905 0 0 2.904  0 0 0 0 0 0 136.919399 0 0 0 ICPUSDT {[] []}}
+2025/12/20 12:19:07 Processing FeederMarketData: Symbol=, Name=ICPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:07 Expiry not provided, searching for any config matching symbol: ICPUSDT
+2025/12/20 12:19:07 Found config for ICPUSDT with expiry 2025-12-31
+{2.903 2.905 0 0 2.904  0 0 0 0 0 0 0.15 0 0 0 ICPUSDT {[] []}}
+2025/12/20 12:19:07 Saving tick - Symbol: ICPUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:07 Saving tick - Symbol: ICPUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:07 Saving tick - Symbol: ICPUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:07 Tick saved successfully for symbol: DOGUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:07 Tick saved successfully for symbol: ICPUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:07 Tick saved successfully for symbol: ICPUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:07 Tick saved successfully for symbol: ICPUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:08 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:08 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:08 Processing FeederMarketData: Symbol=, Name=LTCUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:08 Expiry not provided, searching for any config matching symbol: LTCUSDT
+2025/12/20 12:19:08 Found config for LTCUSDT with expiry 2025-12-31
+2025/12/20 12:19:08 Found config for BNBUSDT with expiry 2025-12-31
+{76.78 76.79 0 0 76.79  0 0 0 0 0 0 0.111682 0 0 0 LTCUSD {[] []}}
+2025/12/20 12:19:08 Saving tick - Symbol: LTCUSD, Expiry: 2025-12-31
+{853.6 853.68 0 0 853.6  0 0 0 0 0 0 0.014032 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:08 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:08 Tick saved successfully for symbol: LTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:08 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:08 Processing FeederMarketData: Symbol=, Name=ADAUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:08 Expiry not provided, searching for any config matching symbol: ADAUSDT
+2025/12/20 12:19:08 Found config for ADAUSDT with expiry 2025-12-31
+2025/12/20 12:19:08 Processing FeederMarketData: Symbol=, Name=DOGEUSDT, Expiry=NO EXPIRY
+{0.3732 0.3733 0 0 0.3733  0 0 0 0 0 0 24.773 0 0 0 ADAUSD {[] []}}
+2025/12/20 12:19:08 Expiry not provided, searching for any config matching symbol: DOGEUSDT
+2025/12/20 12:19:08 Found config for DOGEUSDT with expiry 2025-12-31
+2025/12/20 12:19:08 Saving tick - Symbol: ADAUSD, Expiry: 2025-12-31
+{0.1313 0.13131 0 0 0.13129  0 0 0 0 0 0 99.957098 0 0 0 DOGUSD {[] []}}
+2025/12/20 12:19:08 Saving tick - Symbol: DOGUSD, Expiry: 2025-12-31
+2025/12/20 12:19:08 Tick saved successfully for symbol: DOGUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:08 Tick saved successfully for symbol: ADAUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:08 Processing FeederMarketData: Symbol=, Name=DOGEUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:08 Expiry not provided, searching for any config matching symbol: DOGEUSDT
+2025/12/20 12:19:08 Found config for DOGEUSDT with expiry 2025-12-31
+{0.1313 0.13131 0 0 0.1313  0 0 0 0 0 0 99.957098 0 0 0 DOGUSD {[] []}}
+2025/12/20 12:19:08 Saving tick - Symbol: DOGUSD, Expiry: 2025-12-31
+2025/12/20 12:19:08 Tick saved successfully for symbol: DOGUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:09 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:09 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:09 Found config for BNBUSDT with expiry 2025-12-31
+{853.6 853.68 0 0 853.68  0 0 0 0 0 0 0.058354 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:09 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:09 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:09 Processing FeederMarketData: Symbol=, Name=POLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:09 Expiry not provided, searching for any config matching symbol: POLUSDT
+2025/12/20 12:19:09 Processing FeederMarketData: Symbol=, Name=DOTUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:09 Expiry not provided, searching for any config matching symbol: DOTUSDT
+2025/12/20 12:19:09 Found config for POLUSDT with expiry 2025-12-31
+2025/12/20 12:19:09 Found config for DOTUSDT with expiry 2025-12-31
+{0.1097 0.1098 0 0 0.1096  0 0 0 0 0 0 945 0 0 0 POLUSDT {[] []}}
+2025/12/20 12:19:09 Saving tick - Symbol: POLUSDT, Expiry: 2025-12-31
+{1.835 1.836 0 0 1.836  0 0 0 0 0 0 16.016 0 0 0 DOTUSDT {[] []}}
+2025/12/20 12:19:09 Saving tick - Symbol: DOTUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:09 Tick saved successfully for symbol: DOTUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:09 Tick saved successfully for symbol: POLUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:10 Processing FeederMarketData: Symbol=, Name=POLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:10 Expiry not provided, searching for any config matching symbol: POLUSDT
+2025/12/20 12:19:10 Found config for POLUSDT with expiry 2025-12-31
+{0.1097 0.1098 0 0 0.1097  0 0 0 0 0 0 945 0 0 0 POLUSDT {[] []}}
+2025/12/20 12:19:10 Saving tick - Symbol: POLUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:10 Tick saved successfully for symbol: POLUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:10 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:10 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:10 Found config for BNBUSDT with expiry 2025-12-31
+2025/12/20 12:19:10 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+{853.6 853.68 0 0 853.67  0 0 0 0 0 0 0.058354 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:10 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:10 Found config for ETHUSDT with expiry 2025-12-31
+2025/12/20 12:19:10 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+{2980.66 2980.67 0 0 2980.67  0 0 0 0 0 0 0.012954 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:10 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:10 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:10 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:10 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:10 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:10 Found config for BNBUSDT with expiry 2025-12-31
+2025/12/20 12:19:10 Processing FeederMarketData: Symbol=, Name=XLMUSDT, Expiry=NO EXPIRY
+{853.6 853.68 0 0 853.6  0 0 0 0 0 0 0.058538 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:10 Expiry not provided, searching for any config matching symbol: XLMUSDT
+2025/12/20 12:19:10 Found config for XLMUSDT with expiry 2025-12-31
+2025/12/20 12:19:10 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+{0.2198 0.2199 0 0 0.2198  0 0 0 0 0 0 1191.663575 0 0 0 XLMUSDT {[] []}}
+2025/12/20 12:19:10 Saving tick - Symbol: XLMUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:10 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:10 Tick saved successfully for symbol: XLMUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:11 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:11 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:11 Found config for BNBUSDT with expiry 2025-12-31
+{853.6 853.68 0 0 853.67  0 0 0 0 0 0 1.071336 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:11 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:11 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:11 Processing FeederMarketData: Symbol=, Name=LTCUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:11 Expiry not provided, searching for any config matching symbol: LTCUSDT
+2025/12/20 12:19:11 Found config for LTCUSDT with expiry 2025-12-31
+{76.78 76.79 0 0 76.78  0 0 0 0 0 0 0.436861 0 0 0 LTCUSD {[] []}}
+2025/12/20 12:19:11 Saving tick - Symbol: LTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:11 Tick saved successfully for symbol: LTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:12 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:12 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:12 Found config for BNBUSDT with expiry 2025-12-31
+{853.6 853.68 0 0 853.68  0 0 0 0 0 0 1.071336 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:12 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:12 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:12 Processing FeederMarketData: Symbol=, Name=DOTUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:12 Expiry not provided, searching for any config matching symbol: DOTUSDT
+2025/12/20 12:19:12 Found config for DOTUSDT with expiry 2025-12-31
+{1.836 1.837 0 0 1.836  0 0 0 0 0 0 16.016 0 0 0 DOTUSDT {[] []}}
+2025/12/20 12:19:12 Saving tick - Symbol: DOTUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:12 Tick saved successfully for symbol: DOTUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:13 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:13 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:13 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88288.4 88288.5 0 0 88288.4  0 0 0 0 0 0 0.000844 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:13 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:13 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:13 Processing FeederMarketData: Symbol=, Name=ADAUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:13 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:13 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:13 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:19:13 Expiry not provided, searching for any config matching symbol: ADAUSDT
+{1.9145 1.9146 0 0 1.9145  0 0 0 0 0 0 287.258766 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:13 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:13 Found config for ADAUSDT with expiry 2025-12-31
+{0.3733 0.3734 0 0 0.3733  0 0 0 0 0 0 24.773 0 0 0 ADAUSD {[] []}}
+2025/12/20 12:19:13 Saving tick - Symbol: ADAUSD, Expiry: 2025-12-31
+2025/12/20 12:19:13 Processing FeederMarketData: Symbol=, Name=LINKUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:13 Expiry not provided, searching for any config matching symbol: LINKUSDT
+2025/12/20 12:19:13 Found config for LINKUSDT with expiry 2025-12-31
+{12.49 12.497 0 0 12.49  0 0 0 0 0 0 0.15 0 0 0 LINKUSD {[] []}}
+2025/12/20 12:19:13 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:13 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:13 Found config for XRPUSDT with expiry 2025-12-31
+{1.9145 1.9146 0 0 1.9144  0 0 0 0 0 0 4.848789 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:13 Saving tick - Symbol: LINKUSD, Expiry: 2025-12-31
+2025/12/20 12:19:13 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:13 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:13 Tick saved successfully for symbol: ADAUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:13 Tick saved successfully for symbol: LINKUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:13 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:13 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:13 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:13 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88295.5 88295.51 0 0 88292.49  0 0 0 0 0 0 0.000113 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:13 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:13 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:14 Found config for ETHUSDT with expiry 2025-12-31
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:14 Found config for BTCUSD_MIX with expiry 2025-12-31
+{2980.73 2980.74 0 0 2980.67  0 0 0 0 0 0 1.74099 0 0 0 ETHUSD {[] []}}
+{88300 88300.1 0 0 88292.49  0 0 0 0 0 0 0.000141 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=DOGEUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: DOGEUSDT
+2025/12/20 12:19:14 Found config for DOGEUSDT with expiry 2025-12-31
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+{0.13132 0.13133 0 0 0.1313  0 0 0 0 0 0 1366.744555 0 0 0 DOGUSD {[] []}}
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:14 Found config for BNBUSDT with expiry 2025-12-31
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+{853.6 853.68 0 0 853.67  0 0 0 0 0 0 1.071336 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:14 Found config for BNBUSDT with expiry 2025-12-31
+2025/12/20 12:19:14 Saving tick - Symbol: DOGUSD, Expiry: 2025-12-31
+{853.69 853.7 0 0 853.67  0 0 0 0 0 0 1.071336 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:14 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=LTCUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: LTCUSDT
+2025/12/20 12:19:14 Found config for LTCUSDT with expiry 2025-12-31
+{76.79 76.8 0 0 76.79  0 0 0 0 0 0 0.436861 0 0 0 LTCUSD {[] []}}
+2025/12/20 12:19:14 Saving tick - Symbol: LTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:19:14 Found config for SOLUSDT with expiry 2025-12-31
+{126.32 126.33 0 0 126.33  0 0 0 0 0 0 0.079161 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:19:14 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:19:14 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88300 88302.72 0 0 88292.49  0 0 0 0 0 0 0.000254 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:14 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:14 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88300 88303.22 0 0 88292.49  0 0 0 0 0 0 0.000254 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:14 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=LTCUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:14 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:14 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:14 Found config for ETHUSDT with expiry 2025-12-31
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:14 Found config for XRPUSDT with expiry 2025-12-31
+{1.9146 1.9147 0 0 1.9145  0 0 0 0 0 0 105.698897 0 0 0 XRPUSD {[] []}}
+{2980.78 2980.79 0 0 2980.67  0 0 0 0 0 0 0.006815 0 0 0 ETHUSD {[] []}}
+{1.9146 1.9147 0 0 1.9146  0 0 0 0 0 0 105.698897 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:14 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:14 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88296.57 88296.58 0 0 88292.49  0 0 0 0 0 0 0.000113 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=ICPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: ICPUSDT
+2025/12/20 12:19:14 Found config for ICPUSDT with expiry 2025-12-31
+{2.905 2.906 0 0 2.904  0 0 0 0 0 0 136.919399 0 0 0 ICPUSDT {[] []}}
+2025/12/20 12:19:14 Saving tick - Symbol: ICPUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:14 Found config for BTCUSD_MIX with expiry 2026-12-31
+{88297.57 88298.35 0 0 88292.49  0 0 0 0 0 0 0.000141 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:14 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:19:14 Found config for SOLUSDT with expiry 2025-12-31
+{126.33 126.34 0 0 126.33  0 0 0 0 0 0 0.079161 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:19:14 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:14 Found config for BNBUSDT with expiry 2025-12-31
+{853.6 853.7 0 0 853.67  0 0 0 0 0 0 1.071336 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:14 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: LTCUSDT
+2025/12/20 12:19:14 Found config for LTCUSDT with expiry 2025-12-31
+2025/12/20 12:19:14 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:14 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:14 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:14 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:14 Saving tick - Symbol: BTCUSD, Expiry: 2026-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:14 Found config for BTCUSD_MIX with expiry 2025-12-31
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:14 Found config for ETHUSDT with expiry 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: DOGUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: LTCUSD with expiry_date: 2025-12-31
+{76.78 76.79 0 0 76.79  0 0 0 0 0 0 0.436861 0 0 0 LTCUSD {[] []}}
+{88296.8 88297 0 0 88292.49  0 0 0 0 0 0 0.000113 0 0 0 BTCUSD {[] []}}
+{2980.9 2980.91 0 0 2980.67  0 0 0 0 0 0 0.006815 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:14 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: ICPUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: BTCUSD with expiry_date: 2026-12-31
+2025/12/20 12:19:14 Saving tick - Symbol: LTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: LTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=ICPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: ICPUSDT
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:14 Found config for ETHUSDT with expiry 2025-12-31
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=BCHUSDT, Expiry=NO EXPIRY
+{2981 2981.01 0 0 2980.67  0 0 0 0 0 0 0.002599 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: BCHUSDT
+2025/12/20 12:19:14 Found config for BCHUSDT with expiry 2025-12-31
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+{605.6 605.7 0 0 605.6  0 0 0 0 0 0 2.17531 0 0 0 BCHUSD {[] []}}
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:14 Found config for ETHUSDT with expiry 2025-12-31
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+{2980.99 2981 0 0 2980.67  0 0 0 0 0 0 0.000339 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:14 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+{1.9148 1.9149 0 0 1.9148  0 0 0 0 0 0 5.746075 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:14 Found config for BNBUSDT with expiry 2025-12-31
+2025/12/20 12:19:14 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+{853.7 853.74 0 0 853.67  0 0 0 0 0 0 1.071336 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:14 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:14 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:14 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:14 Found config for BTCUSD_MIX with expiry 2026-12-31
+2025/12/20 12:19:14 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88303.6 88307.85 0 0 88292.49  0 0 0 0 0 0 0.000449 0 0 0 BTCUSD {[] []}}
+{88300 88303.7 0 0 88292.49  0 0 0 0 0 0 0.000254 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:14 Saving tick - Symbol: BTCUSD, Expiry: 2026-12-31
+2025/12/20 12:19:14 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:14 Saving tick - Symbol: BCHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:14 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:14 Found config for ICPUSDT with expiry 2025-12-31
+{2.905 2.906 0 0 2.905  0 0 0 0 0 0 136.919399 0 0 0 ICPUSDT {[] []}}
+2025/12/20 12:19:14 Saving tick - Symbol: ICPUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:14 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: BTCUSD with expiry_date: 2026-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: BCHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: ICPUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:14 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:15 Found config for ETHUSDT with expiry 2025-12-31
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+{2981.33 2981.34 0 0 2980.67  0 0 0 0 0 0 0.002599 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:15 Found config for BTCUSD_MIX with expiry 2025-12-31
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+{88303.6 88308.53 0 0 88292.49  0 0 0 0 0 0 0.000449 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:15 Found config for BTCUSD_MIX with expiry 2026-12-31
+2025/12/20 12:19:15 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+{88303.6 88308.54 0 0 88292.49  0 0 0 0 0 0 0.000449 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:15 Saving tick - Symbol: BTCUSD, Expiry: 2026-12-31
+2025/12/20 12:19:15 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=DOGEUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: DOGEUSDT
+2025/12/20 12:19:15 Found config for DOGEUSDT with expiry 2025-12-31
+{0.13133 0.13134 0 0 0.13133  0 0 0 0 0 0 18.931484 0 0 0 DOGUSD {[] []}}
+2025/12/20 12:19:15 Saving tick - Symbol: DOGUSD, Expiry: 2025-12-31
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=DOGEUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: DOGEUSDT
+2025/12/20 12:19:15 Found config for DOGEUSDT with expiry 2025-12-31
+{0.13133 0.13134 0 0 0.1313  0 0 0 0 0 0 18.931484 0 0 0 DOGUSD {[] []}}
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=ADAUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: ADAUSDT
+2025/12/20 12:19:15 Found config for ADAUSDT with expiry 2025-12-31
+{0.3734 0.3735 0 0 0.3733  0 0 0 0 0 0 2808.738 0 0 0 ADAUSD {[] []}}
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:15 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88303.6 88309 0 0 88292.49  0 0 0 0 0 0 0.000449 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=LINKUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: LINKUSDT
+2025/12/20 12:19:15 Found config for LINKUSDT with expiry 2025-12-31
+{12.49 12.498 0 0 12.49  0 0 0 0 0 0 0.15 0 0 0 LINKUSD {[] []}}
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:15 Found config for BTCUSD_MIX with expiry 2025-12-31
+2025/12/20 12:19:15 Found config for ETHUSDT with expiry 2025-12-31
+{88310.13 88310.14 0 0 88292.49  0 0 0 0 0 0 0.000449 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+{2981.04 2981.05 0 0 2980.67  0 0 0 0 0 0 0.002599 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:15 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88308.9 88309 0 0 88292.49  0 0 0 0 0 0 0.011324 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:15 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:15 Saving tick - Symbol: ADAUSD, Expiry: 2025-12-31
+2025/12/20 12:19:15 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:15 Saving tick - Symbol: LINKUSD, Expiry: 2025-12-31
+2025/12/20 12:19:15 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:15 Saving tick - Symbol: DOGUSD, Expiry: 2025-12-31
+2025/12/20 12:19:15 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: DOGUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: BTCUSD with expiry_date: 2026-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: LINKUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: ADAUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: DOGUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:15 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=DOGEUSDT, Expiry=NO EXPIRY
+{1.9149 1.915 0 0 1.9148  0 0 0 0 0 0 2.821042 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: DOGEUSDT
+2025/12/20 12:19:15 Found config for DOGEUSDT with expiry 2025-12-31
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=DOGEUSDT, Expiry=NO EXPIRY
+{0.13134 0.13135 0 0 0.13133  0 0 0 0 0 0 100 0 0 0 DOGUSD {[] []}}
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: DOGEUSDT
+2025/12/20 12:19:15 Found config for DOGEUSDT with expiry 2025-12-31
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+{0.13134 0.13135 0 0 0.13134  0 0 0 0 0 0 100 0 0 0 DOGUSD {[] []}}
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:15 Found config for BNBUSDT with expiry 2025-12-31
+2025/12/20 12:19:15 Saving tick - Symbol: DOGUSD, Expiry: 2025-12-31
+{853.7 853.75 0 0 853.67  0 0 0 0 0 0 1.071336 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:15 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:15 Saving tick - Symbol: DOGUSD, Expiry: 2025-12-31
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:15 Found config for BNBUSDT with expiry 2025-12-31
+{853.7 853.75 0 0 853.7  0 0 0 0 0 0 1.071336 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:15 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88317.6 88318.1 0 0 88317.9  0 0 0 0 0 0 0.000449 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:15 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:15 Found config for XRPUSDT with expiry 2025-12-31
+{1.915 1.9151 0 0 1.915  0 0 0 0 0 0 2.821042 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:15 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=ADAUSDT, Expiry=NO EXPIRY
+{1.915 1.9151 0 0 1.9148  0 0 0 0 0 0 2.821042 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: ADAUSDT
+2025/12/20 12:19:15 Found config for ADAUSDT with expiry 2025-12-31
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+{0.3734 0.3735 0 0 0.3734  0 0 0 0 0 0 2808.738 0 0 0 ADAUSD {[] []}}
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:15 Found config for ETHUSDT with expiry 2025-12-31
+2025/12/20 12:19:15 Saving tick - Symbol: ADAUSD, Expiry: 2025-12-31
+{2981.33 2981.34 0 0 2981.34  0 0 0 0 0 0 0.002599 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=TRXUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: TRXUSDT
+2025/12/20 12:19:15 Found config for TRXUSDT with expiry 2025-12-31
+2025/12/20 12:19:15 Found config for BTCUSD_MIX with expiry 2026-12-31
+{0.279 0.27903 0 0 0.27902  0 0 0 0 0 0 39.040427 0 0 0 TRXUSDT {[] []}}
+{88310.7 88310.8 0 0 88292.49  0 0 0 0 0 0 0.000449 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:15 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:15 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:15 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:15 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:15 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88310.7 88310.8 0 0 88310.7  0 0 0 0 0 0 0.000449 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:15 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:15 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:15 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:15 Found config for BTCUSD_MIX with expiry 2026-12-31
+2025/12/20 12:19:15 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:15 Saving tick - Symbol: TRXUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:15 Saving tick - Symbol: BTCUSD, Expiry: 2026-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: ADAUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: DOGUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+{88318 88318.1 0 0 88317.9  0 0 0 0 0 0 0.000449 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:15 Saving tick - Symbol: BTCUSD, Expiry: 2026-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: DOGUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: BTCUSD with expiry_date: 2026-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: TRXUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:15 Tick saved successfully for symbol: BTCUSD with expiry_date: 2026-12-31
+2025/12/20 12:19:16 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:16 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:16 Found config for BTCUSD_MIX with expiry 2026-12-31
+2025/12/20 12:19:16 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+{88318.51 88318.52 0 0 88318.52  0 0 0 0 0 0 0.000971 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:16 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:19:16 Found config for SOLUSDT with expiry 2025-12-31
+{126.34 126.35 0 0 126.33  0 0 0 0 0 0 4.358864 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:19:16 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:16 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:16 Found config for BTCUSD_MIX with expiry 2025-12-31
+2025/12/20 12:19:16 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:16 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:16 Found config for XRPUSDT with expiry 2025-12-31
+{88318.51 88318.52 0 0 88318.51  0 0 0 0 0 0 0.000449 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:16 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+{1.9151 1.9152 0 0 1.915  0 0 0 0 0 0 68.79276 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:16 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:16 Found config for ETHUSDT with expiry 2025-12-31
+{2981.33 2981.34 0 0 2981.33  0 0 0 0 0 0 0.000627 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:16 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:16 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:16 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:19:16 Saving tick - Symbol: BTCUSD, Expiry: 2026-12-31
+{1.9152 1.9153 0 0 1.915  0 0 0 0 0 0 68.79276 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:16 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:16 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:19:16 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:16 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:16 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:16 Tick saved successfully for symbol: BTCUSD with expiry_date: 2026-12-31
+2025/12/20 12:19:16 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:16 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:16 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:16 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:16 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:16 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:16 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:16 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:16 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:16 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:19:16 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+{1.9153 1.9154 0 0 1.9153  0 0 0 0 0 0 1.625786 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:16 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:16 Found config for XRPUSDT with expiry 2025-12-31
+{1.9152 1.9154 0 0 1.9153  0 0 0 0 0 0 1.625786 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:16 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:16 Found config for XRPUSDT with expiry 2025-12-31
+{1.9152 1.9154 0 0 1.915  0 0 0 0 0 0 1.625786 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:16 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:16 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:16 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:16 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:16 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:17 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:17 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:17 Found config for XRPUSDT with expiry 2025-12-31
+{1.9153 1.9154 0 0 1.9154  0 0 0 0 0 0 29.702 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:17 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:17 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:18 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:18 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:18 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:18 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:18 Processing FeederMarketData: Symbol=, Name=BCHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:18 Expiry not provided, searching for any config matching symbol: BCHUSDT
+2025/12/20 12:19:18 Found config for BCHUSDT with expiry 2025-12-31
+{605.7 605.8 0 0 605.6  0 0 0 0 0 0 2.17531 0 0 0 BCHUSD {[] []}}
+2025/12/20 12:19:18 Processing FeederMarketData: Symbol=, Name=XLMUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:18 Expiry not provided, searching for any config matching symbol: XLMUSDT
+2025/12/20 12:19:18 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:19:18 Found config for SOLUSDT with expiry 2025-12-31
+2025/12/20 12:19:18 Found config for ETHUSDT with expiry 2025-12-31
+{126.34 126.35 0 0 126.35  0 0 0 0 0 0 0.023743 0 0 0 SOLUSD {[] []}}
+{2981.33 2981.34 0 0 2981.34  0 0 0 0 0 0 0.002282 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:18 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:19:18 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:18 Found config for XRPUSDT with expiry 2025-12-31
+{1.9153 1.9154 0 0 1.9153  0 0 0 0 0 0 29.702 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:18 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:18 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:18 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:18 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:18 Found config for BNBUSDT with expiry 2025-12-31
+2025/12/20 12:19:18 Processing FeederMarketData: Symbol=, Name=DOGEUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:18 Expiry not provided, searching for any config matching symbol: DOGEUSDT
+2025/12/20 12:19:18 Found config for DOGEUSDT with expiry 2025-12-31
+{853.7 853.76 0 0 853.7  0 0 0 0 0 0 1.071336 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:18 Processing FeederMarketData: Symbol=, Name=BCHUSDT, Expiry=NO EXPIRY
+{0.13135 0.13136 0 0 0.13134  0 0 0 0 0 0 100 0 0 0 DOGUSD {[] []}}
+2025/12/20 12:19:18 Expiry not provided, searching for any config matching symbol: BCHUSDT
+2025/12/20 12:19:18 Found config for BCHUSDT with expiry 2025-12-31
+{605.8 605.9 0 0 605.6  0 0 0 0 0 0 2.17531 0 0 0 BCHUSD {[] []}}
+2025/12/20 12:19:18 Saving tick - Symbol: BCHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:18 Processing FeederMarketData: Symbol=, Name=XLMUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:18 Expiry not provided, searching for any config matching symbol: XLMUSDT
+2025/12/20 12:19:18 Found config for XLMUSDT with expiry 2025-12-31
+2025/12/20 12:19:18 Saving tick - Symbol: BCHUSD, Expiry: 2025-12-31
+{0.2199 0.21991 0 0 0.2198  0 0 0 0 0 0 1191.663575 0 0 0 XLMUSDT {[] []}}
+2025/12/20 12:19:18 Found config for XLMUSDT with expiry 2025-12-31
+{0.2199 0.21995 0 0 0.2198  0 0 0 0 0 0 15.000001 0 0 0 XLMUSDT {[] []}}
+2025/12/20 12:19:18 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:18 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:18 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88318.51 88318.52 0 0 88318.51  0 0 0 0 0 0 0.000152 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:18 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:18 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:18 Saving tick - Symbol: DOGUSD, Expiry: 2025-12-31
+2025/12/20 12:19:18 Saving tick - Symbol: XLMUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:18 Saving tick - Symbol: XLMUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:18 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:18 Tick saved successfully for symbol: BCHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:18 Tick saved successfully for symbol: DOGUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:18 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:18 Tick saved successfully for symbol: XLMUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:18 Tick saved successfully for symbol: XLMUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:18 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:18 Tick saved successfully for symbol: BCHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:18 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:18 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:18 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:18 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:18 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:18 Found config for BNBUSDT with expiry 2025-12-31
+2025/12/20 12:19:18 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:18 Found config for XRPUSDT with expiry 2025-12-31
+{853.7 853.8 0 0 853.76  0 0 0 0 0 0 0.03 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:18 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+{1.9153 1.9154 0 0 1.9154  0 0 0 0 0 0 29.702 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:18 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:18 Found config for BNBUSDT with expiry 2025-12-31
+{853.7 853.76 0 0 853.76  0 0 0 0 0 0 0.03 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:18 Processing FeederMarketData: Symbol=, Name=XLMUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:18 Expiry not provided, searching for any config matching symbol: XLMUSDT
+2025/12/20 12:19:18 Found config for XLMUSDT with expiry 2025-12-31
+2025/12/20 12:19:18 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+{0.2199 0.21995 0 0 0.2199  0 0 0 0 0 0 15.000001 0 0 0 XLMUSDT {[] []}}
+2025/12/20 12:19:18 Saving tick - Symbol: XLMUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:18 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:18 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:18 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:18 Tick saved successfully for symbol: XLMUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:18 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:18 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:18 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:18 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:18 Found config for BNBUSDT with expiry 2025-12-31
+{853.79 853.8 0 0 853.76  0 0 0 0 0 0 0.03 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:18 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:18 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:18 Processing FeederMarketData: Symbol=, Name=DOGEUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:18 Expiry not provided, searching for any config matching symbol: DOGEUSDT
+2025/12/20 12:19:18 Found config for DOGEUSDT with expiry 2025-12-31
+{0.13135 0.13136 0 0 0.13136  0 0 0 0 0 0 99.999999 0 0 0 DOGUSD {[] []}}
+2025/12/20 12:19:18 Saving tick - Symbol: DOGUSD, Expiry: 2025-12-31
+2025/12/20 12:19:18 Tick saved successfully for symbol: DOGUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:19 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:19 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:19 Found config for BTCUSD_MIX with expiry 2026-12-31
+{88318.51 88318.52 0 0 88318.52  0 0 0 0 0 0 0.000152 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:19 Saving tick - Symbol: BTCUSD, Expiry: 2026-12-31
+2025/12/20 12:19:19 Tick saved successfully for symbol: BTCUSD with expiry_date: 2026-12-31
+2025/12/20 12:19:19 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:19 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:19 Found config for BNBUSDT with expiry 2025-12-31
+{853.79 853.8 0 0 853.8  0 0 0 0 0 0 0.03 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:19 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:19 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:20 Processing FeederMarketData: Symbol=, Name=DOGEUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:20 Expiry not provided, searching for any config matching symbol: DOGEUSDT
+2025/12/20 12:19:20 Found config for DOGEUSDT with expiry 2025-12-31
+{0.13135 0.13136 0 0 0.13135  0 0 0 0 0 0 99.999999 0 0 0 DOGUSD {[] []}}
+2025/12/20 12:19:20 Saving tick - Symbol: DOGUSD, Expiry: 2025-12-31
+2025/12/20 12:19:20 Tick saved successfully for symbol: DOGUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:20 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:20 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:20 Found config for BNBUSDT with expiry 2025-12-31
+{853.79 853.8 0 0 853.79  0 0 0 0 0 0 0.03 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:20 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:20 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=LINKUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: LINKUSDT
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=LINKUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: LINKUSDT
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=LINKUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: LINKUSDT
+2025/12/20 12:19:21 Found config for LINKUSDT with expiry 2025-12-31
+2025/12/20 12:19:21 Found config for LINKUSDT with expiry 2025-12-31
+{12.497 12.498 0 0 12.49  0 0 0 0 0 0 0.15 0 0 0 LINKUSD {[] []}}
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=LTCUSDT, Expiry=NO EXPIRY
+{12.499 12.5 0 0 12.499  0 0 0 0 0 0 0.15 0 0 0 LINKUSD {[] []}}
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: LTCUSDT
+2025/12/20 12:19:21 Found config for LTCUSDT with expiry 2025-12-31
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=TRXUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: TRXUSDT
+{76.8 76.81 0 0 76.8  0 0 0 0 0 0 0.128581 0 0 0 LTCUSD {[] []}}
+2025/12/20 12:19:21 Found config for LINKUSDT with expiry 2025-12-31
+{12.497 12.498 0 0 12.497  0 0 0 0 0 0 0.15 0 0 0 LINKUSD {[] []}}
+2025/12/20 12:19:21 Saving tick - Symbol: LINKUSD, Expiry: 2025-12-31
+2025/12/20 12:19:21 Saving tick - Symbol: LINKUSD, Expiry: 2025-12-31
+2025/12/20 12:19:21 Found config for TRXUSDT with expiry 2025-12-31
+{0.279 0.27903 0 0 0.279  0 0 0 0 0 0 39.040427 0 0 0 TRXUSDT {[] []}}
+2025/12/20 12:19:21 Saving tick - Symbol: TRXUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:21 Saving tick - Symbol: LTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:21 Saving tick - Symbol: LINKUSD, Expiry: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: LINKUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: LINKUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: LINKUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: LTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: TRXUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:21 Found config for XRPUSDT with expiry 2025-12-31
+{1.9154 1.9155 0 0 1.9154  0 0 0 0 0 0 29.702 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:21 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:21 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+{1.9154 1.9156 0 0 1.9154  0 0 0 0 0 0 1.006246 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:21 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+{1.9155 1.9156 0 0 1.9154  0 0 0 0 0 0 1.006246 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:21 Found config for BNBUSDT with expiry 2025-12-31
+{853.8 853.84 0 0 853.79  0 0 0 0 0 0 0.03 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:21 Found config for BTCUSD_MIX with expiry 2026-12-31
+{88318.51 88318.52 0 0 88318.51  0 0 0 0 0 0 0.00012 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:21 Saving tick - Symbol: BTCUSD, Expiry: 2026-12-31
+2025/12/20 12:19:21 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:21 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:21 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: BTCUSD with expiry_date: 2026-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=DOGEUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: DOGEUSDT
+2025/12/20 12:19:21 Found config for DOGEUSDT with expiry 2025-12-31
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=DOGEUSDT, Expiry=NO EXPIRY
+{0.13136 0.13137 0 0 0.13135  0 0 0 0 0 0 99.999999 0 0 0 DOGUSD {[] []}}
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: DOGEUSDT
+2025/12/20 12:19:21 Found config for DOGEUSDT with expiry 2025-12-31
+2025/12/20 12:19:21 Saving tick - Symbol: DOGUSD, Expiry: 2025-12-31
+{0.13137 0.13138 0 0 0.13135  0 0 0 0 0 0 99.999999 0 0 0 DOGUSD {[] []}}
+2025/12/20 12:19:21 Saving tick - Symbol: DOGUSD, Expiry: 2025-12-31
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:21 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88320.9 88321 0 0 88318.51  0 0 0 0 0 0 0.00012 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=ADAUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: ADAUSDT
+2025/12/20 12:19:21 Found config for ADAUSDT with expiry 2025-12-31
+{0.3735 0.3736 0 0 0.3734  0 0 0 0 0 0 2808.2298 0 0 0 ADAUSD {[] []}}
+2025/12/20 12:19:21 Found config for ETHUSDT with expiry 2025-12-31
+{2981.49 2981.5 0 0 2981.34  0 0 0 0 0 0 0.395899 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:21 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:21 Found config for BNBUSDT with expiry 2025-12-31
+{853.8 853.88 0 0 853.83  0 0 0 0 0 0 0.03 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:21 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:21 Found config for SOLUSDT with expiry 2025-12-31
+{126.35 126.36 0 0 126.35  0 0 0 0 0 0 0.527855 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:19:21 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:19:21 Found config for BNBUSDT with expiry 2025-12-31
+{853.8 853.9 0 0 853.83  0 0 0 0 0 0 0.03 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:21 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:21 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:21 Saving tick - Symbol: ADAUSD, Expiry: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: DOGUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: DOGUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: ADAUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=LINKUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: LINKUSDT
+2025/12/20 12:19:21 Found config for LINKUSDT with expiry 2025-12-31
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=ADAUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: ADAUSDT
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+{12.5 12.502 0 0 12.5  0 0 0 0 0 0 0.15 0 0 0 LINKUSD {[] []}}
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:21 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=DOGEUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: DOGEUSDT
+2025/12/20 12:19:21 Found config for DOGEUSDT with expiry 2025-12-31
+{1.9155 1.9156 0 0 1.9155  0 0 0 0 0 0 1.006246 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+{0.13139 0.1314 0 0 0.13135  0 0 0 0 0 0 43.946215 0 0 0 DOGUSD {[] []}}
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:21 Found config for BNBUSDT with expiry 2025-12-31
+{853.8 853.93 0 0 853.83  0 0 0 0 0 0 0.03 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=XLMUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: XLMUSDT
+2025/12/20 12:19:21 Found config for XLMUSDT with expiry 2025-12-31
+2025/12/20 12:19:21 Found config for ADAUSDT with expiry 2025-12-31
+{0.2199 0.21999 0 0 0.2199  0 0 0 0 0 0 15.000001 0 0 0 XLMUSDT {[] []}}
+2025/12/20 12:19:21 Saving tick - Symbol: XLMUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:21 Saving tick - Symbol: LINKUSD, Expiry: 2025-12-31
+{0.3735 0.3736 0 0 0.3735  0 0 0 0 0 0 2808.2298 0 0 0 ADAUSD {[] []}}
+2025/12/20 12:19:21 Saving tick - Symbol: ADAUSD, Expiry: 2025-12-31
+2025/12/20 12:19:21 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:21 Saving tick - Symbol: DOGUSD, Expiry: 2025-12-31
+2025/12/20 12:19:21 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: XLMUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: DOGUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: ADAUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: LINKUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=ADAUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: ADAUSDT
+2025/12/20 12:19:21 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:21 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:21 Found config for ETHUSDT with expiry 2025-12-31
+2025/12/20 12:19:21 Found config for BTCUSD_MIX with expiry 2026-12-31
+{2981.59 2981.6 0 0 2981.34  0 0 0 0 0 0 0.1 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:21 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+{88328.4 88328.7 0 0 88318.51  0 0 0 0 0 0 0.00012 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:21 Found config for ADAUSDT with expiry 2025-12-31
+{0.3736 0.3737 0 0 0.3735  0 0 0 0 0 0 2808.2298 0 0 0 ADAUSD {[] []}}
+2025/12/20 12:19:21 Saving tick - Symbol: ADAUSD, Expiry: 2025-12-31
+2025/12/20 12:19:21 Saving tick - Symbol: BTCUSD, Expiry: 2026-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: ADAUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: BTCUSD with expiry_date: 2026-12-31
+2025/12/20 12:19:21 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:22 Found config for BNBUSDT with expiry 2025-12-31
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=XLMUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: XLMUSDT
+{853.8 853.96 0 0 853.83  0 0 0 0 0 0 0.03 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:22 Found config for XLMUSDT with expiry 2025-12-31
+{0.22 0.22003 0 0 0.2199  0 0 0 0 0 0 15.000001 0 0 0 XLMUSDT {[] []}}
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:22 Found config for BNBUSDT with expiry 2025-12-31
+2025/12/20 12:19:22 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+{853.9 853.96 0 0 853.83  0 0 0 0 0 0 0.03 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:22 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:22 Found config for BTCUSD_MIX with expiry 2025-12-31
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=ETCUSDT, Expiry=NO EXPIRY
+{88329.4 88329.7 0 0 88318.51  0 0 0 0 0 0 0.00012 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: ETCUSDT
+2025/12/20 12:19:22 Found config for ETCUSDT with expiry 2025-12-31
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=XLMUSDT, Expiry=NO EXPIRY
+{12.42 12.43 0 0 12.41  0 0 0 0 0 0 0.721673 0 0 0 ETCUSDT {[] []}}
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: XLMUSDT
+2025/12/20 12:19:22 Found config for XLMUSDT with expiry 2025-12-31
+{0.2199 0.22 0 0 0.2199  0 0 0 0 0 0 15.000001 0 0 0 XLMUSDT {[] []}}
+2025/12/20 12:19:22 Saving tick - Symbol: ETCUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=LINKUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: LINKUSDT
+2025/12/20 12:19:22 Found config for LINKUSDT with expiry 2025-12-31
+{12.5 12.505 0 0 12.5  0 0 0 0 0 0 0.15 0 0 0 LINKUSD {[] []}}
+2025/12/20 12:19:22 Saving tick - Symbol: LINKUSD, Expiry: 2025-12-31
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:22 Found config for XRPUSDT with expiry 2025-12-31
+{1.9157 1.9158 0 0 1.9157  0 0 0 0 0 0 1.5 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:22 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=ICPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: ICPUSDT
+2025/12/20 12:19:22 Found config for ICPUSDT with expiry 2025-12-31
+{2.905 2.906 0 0 2.906  0 0 0 0 0 0 4.8024 0 0 0 ICPUSDT {[] []}}
+2025/12/20 12:19:22 Saving tick - Symbol: ICPUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Saving tick - Symbol: XLMUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:22 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:19:22 Found config for SOLUSDT with expiry 2025-12-31
+{126.38 126.39 0 0 126.36  0 0 0 0 0 0 1 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:19:22 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: LINKUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: ETCUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=DOTUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: DOTUSDT
+2025/12/20 12:19:22 Found config for DOTUSDT with expiry 2025-12-31
+{1.837 1.838 0 0 1.836  0 0 0 0 0 0 16.016 0 0 0 DOTUSDT {[] []}}
+2025/12/20 12:19:22 Saving tick - Symbol: DOTUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: ICPUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: XLMUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Saving tick - Symbol: XLMUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: DOTUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: XLMUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=LINKUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: LINKUSDT
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:22 Found config for BTCUSD_MIX with expiry 2025-12-31
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: XRPUSDT
+{88329.6 88330 0 0 88318.51  0 0 0 0 0 0 0.00012 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:22 Found config for XRPUSDT with expiry 2025-12-31
+{1.9158 1.9159 0 0 1.9158  0 0 0 0 0 0 32.478996 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:19:22 Found config for SOLUSDT with expiry 2025-12-31
+2025/12/20 12:19:22 Found config for LINKUSDT with expiry 2025-12-31
+{126.39 126.4 0 0 126.4  0 0 0 0 0 0 0.049766 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:19:22 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+{12.5 12.506 0 0 12.5  0 0 0 0 0 0 0.15 0 0 0 LINKUSD {[] []}}
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=LTCUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: LTCUSDT
+2025/12/20 12:19:22 Found config for LTCUSDT with expiry 2025-12-31
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:22 Found config for ETHUSDT with expiry 2025-12-31
+{76.8 76.82 0 0 76.81  0 0 0 0 0 0 0.065002 0 0 0 LTCUSD {[] []}}
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=DOGEUSDT, Expiry=NO EXPIRY
+{2981.63 2981.64 0 0 2981.34  0 0 0 0 0 0 0.026899 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: DOGEUSDT
+2025/12/20 12:19:22 Found config for DOGEUSDT with expiry 2025-12-31
+{0.13139 0.1314 0 0 0.13139  0 0 0 0 0 0 43.946215 0 0 0 DOGUSD {[] []}}
+2025/12/20 12:19:22 Saving tick - Symbol: DOGUSD, Expiry: 2025-12-31
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:22 Found config for BNBUSDT with expiry 2025-12-31
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:22 Found config for ETHUSDT with expiry 2025-12-31
+{853.9 853.99 0 0 853.83  0 0 0 0 0 0 0.03 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=LTCUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: LTCUSDT
+2025/12/20 12:19:22 Found config for LTCUSDT with expiry 2025-12-31
+{2981.71 2981.72 0 0 2981.34  0 0 0 0 0 0 0.03374 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+{76.81 76.82 0 0 76.81  0 0 0 0 0 0 0.065002 0 0 0 LTCUSD {[] []}}
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:22 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:19:22 Saving tick - Symbol: LTCUSD, Expiry: 2025-12-31
+{1.9159 1.916 0 0 1.9158  0 0 0 0 0 0 32.478996 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:22 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:22 Found config for SOLUSDT with expiry 2025-12-31
+{126.39 126.4 0 0 126.36  0 0 0 0 0 0 0.046966 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:22 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:22 Found config for BNBUSDT with expiry 2025-12-31
+2025/12/20 12:19:22 Found config for BTCUSD_MIX with expiry 2025-12-31
+2025/12/20 12:19:22 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Saving tick - Symbol: LINKUSD, Expiry: 2025-12-31
+{853.9 854 0 0 853.83  0 0 0 0 0 0 0.03 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:22 Saving tick - Symbol: LTCUSD, Expiry: 2025-12-31
+{88332.4 88332.7 0 0 88318.51  0 0 0 0 0 0 0.00012 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:22 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:22 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:22 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: LTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Found config for BNBUSDT with expiry 2025-12-31
+2025/12/20 12:19:22 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: DOGUSD with expiry_date: 2025-12-31
+{853.99 854 0 0 853.83  0 0 0 0 0 0 0.017782 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:22 Found config for ETHUSDT with expiry 2025-12-31
+{2981.86 2981.87 0 0 2981.34  0 0 0 0 0 0 0.000339 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:22 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:22 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:22 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: LINKUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: LTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:22 Found config for BTCUSD_MIX with expiry 2025-12-31
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=XLMUSDT, Expiry=NO EXPIRY
+{88334.4 88334.6 0 0 88334.5  0 0 0 0 0 0 0.00013 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: XLMUSDT
+2025/12/20 12:19:22 Found config for XLMUSDT with expiry 2025-12-31
+{0.22 0.22005 0 0 0.2199  0 0 0 0 0 0 15.000001 0 0 0 XLMUSDT {[] []}}
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:22 Found config for BTCUSD_MIX with expiry 2026-12-31
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:22 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88333.8 88334.1 0 0 88318.51  0 0 0 0 0 0 0.00012 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+{88333.8 88334.1 0 0 88333.9  0 0 0 0 0 0 0.00013 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:22 Found config for ETHUSDT with expiry 2025-12-31
+2025/12/20 12:19:22 Processing FeederMarketData: Symbol=, Name=DOTUSDT, Expiry=NO EXPIRY
+{2981.86 2981.87 0 0 2981.87  0 0 0 0 0 0 0.007 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:22 Expiry not provided, searching for any config matching symbol: DOTUSDT
+2025/12/20 12:19:22 Found config for DOTUSDT with expiry 2025-12-31
+{1.837 1.838 0 0 1.837  0 0 0 0 0 0 16.016 0 0 0 DOTUSDT {[] []}}
+2025/12/20 12:19:22 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:22 Saving tick - Symbol: XLMUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:22 Saving tick - Symbol: BTCUSD, Expiry: 2026-12-31
+2025/12/20 12:19:22 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:22 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:22 Saving tick - Symbol: DOTUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: DOTUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: BTCUSD with expiry_date: 2026-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: XLMUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:22 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:23 Processing FeederMarketData: Symbol=, Name=XLMUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:23 Expiry not provided, searching for any config matching symbol: XLMUSDT
+2025/12/20 12:19:23 Found config for XLMUSDT with expiry 2025-12-31
+2025/12/20 12:19:23 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+{0.22 0.22005 0 0 0.21991  0 0 0 0 0 0 15.000001 0 0 0 XLMUSDT {[] []}}
+2025/12/20 12:19:23 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:23 Found config for BTCUSD_MIX with expiry 2025-12-31
+2025/12/20 12:19:23 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+{88334.5 88334.6 0 0 88334.5  0 0 0 0 0 0 0.00013 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:23 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:23 Found config for BNBUSDT with expiry 2025-12-31
+{853.99 854 0 0 853.99  0 0 0 0 0 0 0.017782 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:23 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:23 Processing FeederMarketData: Symbol=, Name=ETCUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:23 Expiry not provided, searching for any config matching symbol: ETCUSDT
+2025/12/20 12:19:23 Found config for ETCUSDT with expiry 2025-12-31
+{12.42 12.43 0 0 12.42  0 0 0 0 0 0 0.721673 0 0 0 ETCUSDT {[] []}}
+2025/12/20 12:19:23 Processing FeederMarketData: Symbol=, Name=TRXUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:23 Expiry not provided, searching for any config matching symbol: TRXUSDT
+2025/12/20 12:19:23 Found config for TRXUSDT with expiry 2025-12-31
+2025/12/20 12:19:23 Saving tick - Symbol: XLMUSDT, Expiry: 2025-12-31
+{0.279 0.27903 0 0 0.27902  0 0 0 0 0 0 39.040427 0 0 0 TRXUSDT {[] []}}
+2025/12/20 12:19:23 Saving tick - Symbol: TRXUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:23 Processing FeederMarketData: Symbol=, Name=LTCUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:23 Expiry not provided, searching for any config matching symbol: LTCUSDT
+2025/12/20 12:19:23 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:23 Saving tick - Symbol: ETCUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:23 Found config for LTCUSDT with expiry 2025-12-31
+{76.82 76.83 0 0 76.81  0 0 0 0 0 0 0.065002 0 0 0 LTCUSD {[] []}}
+2025/12/20 12:19:23 Saving tick - Symbol: LTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:23 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:23 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:23 Tick saved successfully for symbol: ETCUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:23 Tick saved successfully for symbol: TRXUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:23 Tick saved successfully for symbol: XLMUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:23 Tick saved successfully for symbol: LTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:23 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:23 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:23 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:23 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:23 Found config for BTCUSD_MIX with expiry 2025-12-31
+2025/12/20 12:19:23 Found config for BNBUSDT with expiry 2025-12-31
+{88334.5 88334.6 0 0 88334.6  0 0 0 0 0 0 0.01118 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:23 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+{853.99 854 0 0 854  0 0 0 0 0 0 0.017782 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:23 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:23 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:23 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:24 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:24 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:24 Found config for BNBUSDT with expiry 2025-12-31
+{853.99 854 0 0 853.99  0 0 0 0 0 0 0.017782 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:24 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:24 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:24 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:24 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:24 Processing FeederMarketData: Symbol=, Name=TRXUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:24 Expiry not provided, searching for any config matching symbol: TRXUSDT
+2025/12/20 12:19:24 Found config for TRXUSDT with expiry 2025-12-31
+2025/12/20 12:19:24 Found config for BTCUSD_MIX with expiry 2026-12-31
+{0.279 0.27903 0 0 0.279  0 0 0 0 0 0 39.040427 0 0 0 TRXUSDT {[] []}}
+2025/12/20 12:19:24 Saving tick - Symbol: TRXUSDT, Expiry: 2025-12-31
+{88335.9 88336 0 0 88335.9  0 0 0 0 0 0 0.000449 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:24 Saving tick - Symbol: BTCUSD, Expiry: 2026-12-31
+2025/12/20 12:19:24 Tick saved successfully for symbol: TRXUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:24 Tick saved successfully for symbol: BTCUSD with expiry_date: 2026-12-31
+2025/12/20 12:19:25 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:25 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:25 Found config for ETHUSDT with expiry 2025-12-31
+{2981.99 2982 0 0 2981.87  0 0 0 0 0 0 0.007 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:25 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:25 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:26 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:26 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:26 Found config for ETHUSDT with expiry 2025-12-31
+{2981.99 2982 0 0 2982  0 0 0 0 0 0 0.007 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:26 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:26 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:26 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:26 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:26 Found config for BNBUSDT with expiry 2025-12-31
+2025/12/20 12:19:26 Processing FeederMarketData: Symbol=, Name=LINKUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:26 Expiry not provided, searching for any config matching symbol: LINKUSDT
+{853.99 854 0 0 854  0 0 0 0 0 0 0.017782 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:26 Found config for LINKUSDT with expiry 2025-12-31
+{12.5 12.505 0 0 12.5  0 0 0 0 0 0 0.15 0 0 0 LINKUSD {[] []}}
+2025/12/20 12:19:26 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:26 Saving tick - Symbol: LINKUSD, Expiry: 2025-12-31
+2025/12/20 12:19:26 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:26 Tick saved successfully for symbol: LINKUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:26 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:26 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:19:26 Found config for SOLUSDT with expiry 2025-12-31
+2025/12/20 12:19:26 Processing FeederMarketData: Symbol=, Name=BCHUSDT, Expiry=NO EXPIRY
+{126.38 126.39 0 0 126.4  0 0 0 0 0 0 0.049766 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:19:26 Expiry not provided, searching for any config matching symbol: BCHUSDT
+2025/12/20 12:19:26 Found config for BCHUSDT with expiry 2025-12-31
+{605.8 605.9 0 0 605.9  0 0 0 0 0 0 0.011551 0 0 0 BCHUSD {[] []}}
+2025/12/20 12:19:26 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:19:26 Saving tick - Symbol: BCHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:26 Tick saved successfully for symbol: BCHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:26 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:27 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:27 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:27 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:27 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:27 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:27 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:27 Found config for ETHUSDT with expiry 2025-12-31
+2025/12/20 12:19:27 Expiry not provided, searching for any config matching symbol: XRPUSDT
+{2981.83 2981.84 0 0 2982  0 0 0 0 0 0 0.007 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:27 Found config for XRPUSDT with expiry 2025-12-31
+{1.9159 1.916 0 0 1.9159  0 0 0 0 0 0 52.56117 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:27 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:27 Found config for ETHUSDT with expiry 2025-12-31
+{2981.67 2981.68 0 0 2982  0 0 0 0 0 0 0.007 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:27 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:27 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:19:27 Found config for SOLUSDT with expiry 2025-12-31
+2025/12/20 12:19:27 Found config for ETHUSDT with expiry 2025-12-31
+{126.37 126.38 0 0 126.4  0 0 0 0 0 0 0.049766 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:19:27 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+{2981.67 2981.68 0 0 2981.8  0 0 0 0 0 0 0.196159 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:27 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:27 Found config for ETHUSDT with expiry 2025-12-31
+{2981.86 2981.87 0 0 2982  0 0 0 0 0 0 0.007 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:27 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:27 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:27 Found config for ETHUSDT with expiry 2025-12-31
+{2981.95 2981.96 0 0 2982  0 0 0 0 0 0 0.007 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:27 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:27 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:27 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:27 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:19:27 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:27 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:27 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:27 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:27 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:27 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:27 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:27 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:27 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:27 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:27 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:27 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:19:27 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:27 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:19:27 Found config for SOLUSDT with expiry 2025-12-31
+2025/12/20 12:19:27 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+{126.37 126.38 0 0 126.38  0 0 0 0 0 0 8.732817 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:19:27 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:27 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:19:27 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+{1.9158 1.916 0 0 1.9159  0 0 0 0 0 0 1 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:27 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:27 Found config for SOLUSDT with expiry 2025-12-31
+{126.37 126.38 0 0 126.39  0 0 0 0 0 0 8.732817 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:19:27 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:27 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:27 Found config for BTCUSD_MIX with expiry 2025-12-31
+2025/12/20 12:19:27 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+{88335.9 88336 0 0 88336  0 0 0 0 0 0 5.3e-05 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:27 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:27 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:27 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:27 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:27 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:27 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:27 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:27 Found config for BTCUSD_MIX with expiry 2025-12-31
+2025/12/20 12:19:27 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:27 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:27 Processing FeederMarketData: Symbol=, Name=LINKUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:27 Expiry not provided, searching for any config matching symbol: LINKUSDT
+{88329.14 88329.15 0 0 88332.3  0 0 0 0 0 0 5.7e-05 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:27 Found config for LINKUSDT with expiry 2025-12-31
+{12.5 12.504 0 0 12.5  0 0 0 0 0 0 0.15 0 0 0 LINKUSD {[] []}}
+2025/12/20 12:19:27 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:27 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:27 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:19:27 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+{1.9158 1.9159 0 0 1.9159  0 0 0 0 0 0 1 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:27 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:27 Found config for ETHUSDT with expiry 2025-12-31
+{2981.41 2981.42 0 0 2981.62  0 0 0 0 0 0 0.00015 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:27 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:27 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:27 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88332.55 88332.56 0 0 88336  0 0 0 0 0 0 5.3e-05 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:27 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:27 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:27 Found config for ETHUSDT with expiry 2025-12-31
+2025/12/20 12:19:27 Found config for BTCUSD_MIX with expiry 2026-12-31
+{2981.41 2981.42 0 0 2981.8  0 0 0 0 0 0 0.196159 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:27 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+{88329.14 88329.15 0 0 88329.14  0 0 0 0 0 0 5.7e-05 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:27 Saving tick - Symbol: BTCUSD, Expiry: 2026-12-31
+2025/12/20 12:19:27 Saving tick - Symbol: LINKUSD, Expiry: 2025-12-31
+2025/12/20 12:19:27 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:27 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:27 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:27 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:27 Tick saved successfully for symbol: BTCUSD with expiry_date: 2026-12-31
+2025/12/20 12:19:27 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:27 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:27 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:27 Tick saved successfully for symbol: LINKUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:27 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:27 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:27 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:27 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:27 Found config for ETHUSDT with expiry 2025-12-31
+2025/12/20 12:19:27 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+{2981.41 2981.42 0 0 2981.42  0 0 0 0 0 0 0.00015 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:27 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:27 Found config for BNBUSDT with expiry 2025-12-31
+{853.99 854 0 0 853.99  0 0 0 0 0 0 0.017782 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:27 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:27 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:27 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:27 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:28 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:28 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:28 Found config for XRPUSDT with expiry 2025-12-31
+{1.9158 1.9159 0 0 1.9158  0 0 0 0 0 0 148.045 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:28 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:28 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:29 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:29 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:19:29 Found config for SOLUSDT with expiry 2025-12-31
+{126.37 126.38 0 0 126.37  0 0 0 0 0 0 4.351296 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:19:29 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:19:29 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:30 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:30 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:30 Found config for ETHUSDT with expiry 2025-12-31
+2025/12/20 12:19:30 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+{2981.53 2981.54 0 0 2981.53  0 0 0 0 0 0 0.00114 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:30 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:30 Found config for BNBUSDT with expiry 2025-12-31
+{853.99 854 0 0 854  0 0 0 0 0 0 0.017782 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:30 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:30 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:30 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:30 Found config for ETHUSDT with expiry 2025-12-31
+2025/12/20 12:19:30 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+{2981.53 2981.54 0 0 2981.42  0 0 0 0 0 0 0.00114 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:30 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:30 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:30 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:30 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:31 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:31 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:31 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:31 Found config for ETHUSDT with expiry 2025-12-31
+2025/12/20 12:19:31 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:19:31 Found config for SOLUSDT with expiry 2025-12-31
+{126.37 126.38 0 0 126.38  0 0 0 0 0 0 2.434606 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:19:31 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+{2981.53 2981.54 0 0 2981.54  0 0 0 0 0 0 0.00114 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:31 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:31 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:31 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:32 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:32 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:32 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:19:32 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+{1.9159 1.916 0 0 1.9159  0 0 0 0 0 0 92 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:32 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:19:32 Found config for SOLUSDT with expiry 2025-12-31
+{126.37 126.38 0 0 126.37  0 0 0 0 0 0 0.106127 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:19:32 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:19:32 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:32 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:32 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:32 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:32 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:32 Found config for XRPUSDT with expiry 2025-12-31
+{1.916 1.9161 0 0 1.9159  0 0 0 0 0 0 100 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:32 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:32 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:32 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:32 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:32 Found config for XRPUSDT with expiry 2025-12-31
+{1.916 1.9161 0 0 1.916  0 0 0 0 0 0 100 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:32 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:32 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:33 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:33 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:33 Found config for XRPUSDT with expiry 2025-12-31
+{1.9161 1.9162 0 0 1.916  0 0 0 0 0 0 100 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:33 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:33 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:34 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:34 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:34 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88329.14 88329.15 0 0 88329.15  0 0 0 0 0 0 0.00674 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:34 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:34 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:34 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:34 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:34 Found config for BNBUSDT with expiry 2025-12-31
+{853.99 854 0 0 853.99  0 0 0 0 0 0 0.005938 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:34 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:34 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:37 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:37 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:37 Found config for BNBUSDT with expiry 2025-12-31
+{853.99 854 0 0 854  0 0 0 0 0 0 0.005938 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:37 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:37 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:37 Processing FeederMarketData: Symbol=, Name=BCHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:37 Expiry not provided, searching for any config matching symbol: BCHUSDT
+2025/12/20 12:19:37 Found config for BCHUSDT with expiry 2025-12-31
+{605.9 606 0 0 605.9  0 0 0 0 0 0 0.011551 0 0 0 BCHUSD {[] []}}
+2025/12/20 12:19:37 Saving tick - Symbol: BCHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:37 Tick saved successfully for symbol: BCHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:38 Processing FeederMarketData: Symbol=, Name=BCHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:38 Expiry not provided, searching for any config matching symbol: BCHUSDT
+2025/12/20 12:19:38 Found config for BCHUSDT with expiry 2025-12-31
+{605.9 606 0 0 606  0 0 0 0 0 0 0.011551 0 0 0 BCHUSD {[] []}}
+2025/12/20 12:19:38 Saving tick - Symbol: BCHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:38 Tick saved successfully for symbol: BCHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:38 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:38 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:38 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88329.14 88329.15 0 0 88329.14  0 0 0 0 0 0 0.0008 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:38 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:38 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:39 Processing FeederMarketData: Symbol=, Name=LTCUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:39 Expiry not provided, searching for any config matching symbol: LTCUSDT
+2025/12/20 12:19:39 Found config for LTCUSDT with expiry 2025-12-31
+{76.82 76.83 0 0 76.82  0 0 0 0 0 0 0.312337 0 0 0 LTCUSD {[] []}}
+2025/12/20 12:19:39 Saving tick - Symbol: LTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:39 Tick saved successfully for symbol: LTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:41 Processing FeederMarketData: Symbol=, Name=LTCUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:41 Expiry not provided, searching for any config matching symbol: LTCUSDT
+2025/12/20 12:19:41 Found config for LTCUSDT with expiry 2025-12-31
+2025/12/20 12:19:41 Processing FeederMarketData: Symbol=, Name=LTCUSDT, Expiry=NO EXPIRY
+{76.83 76.84 0 0 76.84  0 0 0 0 0 0 0.312337 0 0 0 LTCUSD {[] []}}
+2025/12/20 12:19:41 Expiry not provided, searching for any config matching symbol: LTCUSDT
+2025/12/20 12:19:41 Found config for LTCUSDT with expiry 2025-12-31
+2025/12/20 12:19:41 Saving tick - Symbol: LTCUSD, Expiry: 2025-12-31
+{76.83 76.84 0 0 76.82  0 0 0 0 0 0 0.312337 0 0 0 LTCUSD {[] []}}
+2025/12/20 12:19:41 Saving tick - Symbol: LTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:41 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:41 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:41 Found config for BNBUSDT with expiry 2025-12-31
+{853.99 854 0 0 853.99  0 0 0 0 0 0 0.001053 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:41 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:41 Tick saved successfully for symbol: LTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:41 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:41 Tick saved successfully for symbol: LTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:42 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:42 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:42 Found config for XRPUSDT with expiry 2025-12-31
+2025/12/20 12:19:42 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:42 Expiry not provided, searching for any config matching symbol: XRPUSDT
+{1.9161 1.9163 0 0 1.9161  0 0 0 0 0 0 1400 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:42 Found config for XRPUSDT with expiry 2025-12-31
+{1.9163 1.9164 0 0 1.9161  0 0 0 0 0 0 1400 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:42 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:42 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:42 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:42 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:42 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:42 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:42 Found config for BNBUSDT with expiry 2025-12-31
+{853.99 854 0 0 854  0 0 0 0 0 0 0.001053 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:42 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:42 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:42 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:42 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:42 Found config for XRPUSDT with expiry 2025-12-31
+{1.9163 1.9164 0 0 1.9162  0 0 0 0 0 0 1400 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:42 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:42 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:43 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:43 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:43 Found config for BNBUSDT with expiry 2025-12-31
+{853.99 854 0 0 853.99  0 0 0 0 0 0 0.001053 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:43 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:43 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:44 Processing FeederMarketData: Symbol=, Name=DOGEUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:44 Expiry not provided, searching for any config matching symbol: DOGEUSDT
+2025/12/20 12:19:44 Found config for DOGEUSDT with expiry 2025-12-31
+2025/12/20 12:19:44 Processing FeederMarketData: Symbol=, Name=ADAUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:44 Expiry not provided, searching for any config matching symbol: ADAUSDT
+2025/12/20 12:19:44 Found config for ADAUSDT with expiry 2025-12-31
+{0.13139 0.1314 0 0 0.1314  0 0 0 0 0 0 29.81132 0 0 0 DOGUSD {[] []}}
+2025/12/20 12:19:44 Saving tick - Symbol: DOGUSD, Expiry: 2025-12-31
+{0.3736 0.3737 0 0 0.3736  0 0 0 0 0 0 499.0522 0 0 0 ADAUSD {[] []}}
+2025/12/20 12:19:44 Saving tick - Symbol: ADAUSD, Expiry: 2025-12-31
+2025/12/20 12:19:44 Tick saved successfully for symbol: DOGUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:44 Tick saved successfully for symbol: ADAUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:44 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:44 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:44 Found config for ETHUSDT with expiry 2025-12-31
+{2981.53 2981.54 0 0 2981.53  0 0 0 0 0 0 0.00349 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:44 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:44 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:45 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:45 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:45 Found config for BTCUSD_MIX with expiry 2025-12-31
+{88329.14 88329.15 0 0 88329.15  0 0 0 0 0 0 0.001357 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:45 Saving tick - Symbol: BTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:45 Tick saved successfully for symbol: BTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:46 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:46 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:19:46 Found config for SOLUSDT with expiry 2025-12-31
+{126.37 126.38 0 0 126.38  0 0 0 0 0 0 0.521305 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:19:46 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:19:46 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:47 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:47 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:47 Found config for BTCUSD_MIX with expiry 2026-12-31
+{88329.14 88329.15 0 0 88329.14  0 0 0 0 0 0 1e-05 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:47 Saving tick - Symbol: BTCUSD, Expiry: 2026-12-31
+2025/12/20 12:19:47 Tick saved successfully for symbol: BTCUSD with expiry_date: 2026-12-31
+2025/12/20 12:19:49 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:49 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:49 Found config for BNBUSDT with expiry 2025-12-31
+2025/12/20 12:19:49 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+{853.99 854 0 0 854  0 0 0 0 0 0 0.060966 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:49 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:19:49 Found config for SOLUSDT with expiry 2025-12-31
+{126.37 126.38 0 0 126.38  0 0 0 0 0 0 0.185346 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:19:49 Processing FeederMarketData: Symbol=, Name=SOLUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:49 Expiry not provided, searching for any config matching symbol: SOLUSDT
+2025/12/20 12:19:49 Found config for SOLUSDT with expiry 2025-12-31
+2025/12/20 12:19:49 Processing FeederMarketData: Symbol=, Name=LTCUSDT, Expiry=NO EXPIRY
+{126.37 126.38 0 0 126.37  0 0 0 0 0 0 2.013494 0 0 0 SOLUSD {[] []}}
+2025/12/20 12:19:49 Expiry not provided, searching for any config matching symbol: LTCUSDT
+2025/12/20 12:19:49 Found config for LTCUSDT with expiry 2025-12-31
+{76.83 76.84 0 0 76.83  0 0 0 0 0 0 0.312337 0 0 0 LTCUSD {[] []}}
+2025/12/20 12:19:49 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:49 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:49 Found config for ETHUSDT with expiry 2025-12-31
+{2981.53 2981.54 0 0 2981.54  0 0 0 0 0 0 0.0083 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:49 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:49 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:19:49 Saving tick - Symbol: SOLUSD, Expiry: 2025-12-31
+2025/12/20 12:19:49 Saving tick - Symbol: LTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:49 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:49 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:49 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:49 Tick saved successfully for symbol: LTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:49 Tick saved successfully for symbol: SOLUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:49 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:49 Processing FeederMarketData: Symbol=, Name=LINKUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:49 Expiry not provided, searching for any config matching symbol: LINKUSDT
+2025/12/20 12:19:49 Found config for LINKUSDT with expiry 2025-12-31
+2025/12/20 12:19:49 Processing FeederMarketData: Symbol=, Name=LINKUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:49 Expiry not provided, searching for any config matching symbol: LINKUSDT
+2025/12/20 12:19:49 Found config for LINKUSDT with expiry 2025-12-31
+{12.5 12.504 0 0 12.503  0 0 0 0 0 0 3.27619 0 0 0 LINKUSD {[] []}}
+2025/12/20 12:19:49 Saving tick - Symbol: LINKUSD, Expiry: 2025-12-31
+{12.5 12.505 0 0 12.503  0 0 0 0 0 0 3.27619 0 0 0 LINKUSD {[] []}}
+2025/12/20 12:19:49 Saving tick - Symbol: LINKUSD, Expiry: 2025-12-31
+2025/12/20 12:19:49 Tick saved successfully for symbol: LINKUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:49 Tick saved successfully for symbol: LINKUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:49 Processing FeederMarketData: Symbol=, Name=LINKUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:49 Expiry not provided, searching for any config matching symbol: LINKUSDT
+2025/12/20 12:19:49 Found config for LINKUSDT with expiry 2025-12-31
+{12.5 12.505 0 0 12.5  0 0 0 0 0 0 3.27619 0 0 0 LINKUSD {[] []}}
+2025/12/20 12:19:49 Saving tick - Symbol: LINKUSD, Expiry: 2025-12-31
+2025/12/20 12:19:49 Tick saved successfully for symbol: LINKUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:51 Processing FeederMarketData: Symbol=, Name=LTCUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:51 Expiry not provided, searching for any config matching symbol: LTCUSDT
+2025/12/20 12:19:51 Found config for LTCUSDT with expiry 2025-12-31
+{76.83 76.84 0 0 76.84  0 0 0 0 0 0 0.312337 0 0 0 LTCUSD {[] []}}
+2025/12/20 12:19:51 Saving tick - Symbol: LTCUSD, Expiry: 2025-12-31
+2025/12/20 12:19:51 Tick saved successfully for symbol: LTCUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:51 Processing FeederMarketData: Symbol=, Name=XRPUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:51 Expiry not provided, searching for any config matching symbol: XRPUSDT
+2025/12/20 12:19:51 Found config for XRPUSDT with expiry 2025-12-31
+{1.9163 1.9164 0 0 1.9163  0 0 0 0 0 0 562.038035 0 0 0 XRPUSD {[] []}}
+2025/12/20 12:19:51 Saving tick - Symbol: XRPUSD, Expiry: 2025-12-31
+2025/12/20 12:19:51 Tick saved successfully for symbol: XRPUSD with expiry_date: 2025-12-31
+2025/12/20 12:19:52 Processing FeederMarketData: Symbol=, Name=TRXUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:52 Expiry not provided, searching for any config matching symbol: TRXUSDT
+2025/12/20 12:19:52 Found config for TRXUSDT with expiry 2025-12-31
+{0.279 0.27903 0 0 0.27903  0 0 0 0 0 0 53.625643 0 0 0 TRXUSDT {[] []}}
+2025/12/20 12:19:52 Saving tick - Symbol: TRXUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:52 Tick saved successfully for symbol: TRXUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:53 Processing FeederMarketData: Symbol=, Name=BTCUSD_MIX, Expiry=NO EXPIRY
+2025/12/20 12:19:53 Expiry not provided, searching for any config matching symbol: BTCUSD_MIX
+2025/12/20 12:19:53 Found config for BTCUSD_MIX with expiry 2026-12-31
+{88329.14 88329.15 0 0 88329.15  0 0 0 0 0 0 0.00034 0 0 0 BTCUSD {[] []}}
+2025/12/20 12:19:53 Saving tick - Symbol: BTCUSD, Expiry: 2026-12-31
+2025/12/20 12:19:53 Tick saved successfully for symbol: BTCUSD with expiry_date: 2026-12-31
+2025/12/20 12:19:53 Processing FeederMarketData: Symbol=, Name=BNBUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:53 Expiry not provided, searching for any config matching symbol: BNBUSDT
+2025/12/20 12:19:53 Found config for BNBUSDT with expiry 2025-12-31
+{853.99 854 0 0 853.99  0 0 0 0 0 0 0.060966 0 0 0 BNBUSDT {[] []}}
+2025/12/20 12:19:53 Saving tick - Symbol: BNBUSDT, Expiry: 2025-12-31
+2025/12/20 12:19:53 Tick saved successfully for symbol: BNBUSDT with expiry_date: 2025-12-31
+2025/12/20 12:19:54 Processing FeederMarketData: Symbol=, Name=ETHUSDT, Expiry=NO EXPIRY
+2025/12/20 12:19:54 Expiry not provided, searching for any config matching symbol: ETHUSDT
+2025/12/20 12:19:54 Found config for ETHUSDT with expiry 2025-12-31
+{2981.53 2981.54 0 0 2981.53  0 0 0 0 0 0 0.030073 0 0 0 ETHUSD {[] []}}
+2025/12/20 12:19:54 Saving tick - Symbol: ETHUSD, Expiry: 2025-12-31
+2025/12/20 12:19:54 Tick saved successfully for symbol: ETHUSD with expiry_date: 2025-12-31

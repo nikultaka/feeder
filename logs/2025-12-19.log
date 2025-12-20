@@ -22,3 +22,13 @@
 {"host":"localhost:8081","level":"info","method":"GET","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-19T16:47:04+05:30","timestamp":"2025-12-19T16:47:04+05:30","url":"/fetch-symbols"}
 {"host":"localhost:8081","level":"info","method":"GET","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-19T16:48:13+05:30","timestamp":"2025-12-19T16:48:13+05:30","url":"/status"}
 {"host":"localhost:8081","level":"info","method":"PATCH","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-19T16:48:18+05:30","timestamp":"2025-12-19T16:48:18+05:30","url":"/start?worker=feeder"}
+{"host":"localhost:8081","level":"info","method":"GET","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-19T21:58:16+05:30","timestamp":"2025-12-19T21:58:16+05:30","url":"/swagger/"}
+{"host":"localhost:8081","level":"info","method":"GET","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-19T21:58:16+05:30","timestamp":"2025-12-19T21:58:16+05:30","url":"/favicon.ico"}
+{"host":"localhost:8081","level":"info","method":"GET","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-19T21:58:19+05:30","timestamp":"2025-12-19T21:58:19+05:30","url":"/swagger/index.html"}
+{"host":"localhost:8081","level":"info","method":"GET","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-19T21:58:19+05:30","timestamp":"2025-12-19T21:58:19+05:30","url":"/swagger/swagger-ui.css"}
+{"host":"localhost:8081","level":"info","method":"GET","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-19T21:58:19+05:30","timestamp":"2025-12-19T21:58:19+05:30","url":"/swagger/swagger-ui-standalone-preset.js"}
+{"host":"localhost:8081","level":"info","method":"GET","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-19T21:58:19+05:30","timestamp":"2025-12-19T21:58:19+05:30","url":"/swagger/swagger-ui-bundle.js"}
+{"host":"localhost:8081","level":"info","method":"GET","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-19T21:58:19+05:30","timestamp":"2025-12-19T21:58:19+05:30","url":"/swagger/favicon-32x32.png"}
+{"host":"localhost:8081","level":"info","method":"GET","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-19T21:58:19+05:30","timestamp":"2025-12-19T21:58:19+05:30","url":"/swagger/doc.json"}
+{"host":"localhost:8081","level":"info","method":"GET","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-19T22:02:00+05:30","timestamp":"2025-12-19T22:02:00+05:30","url":"/"}
+{"host":"localhost:8081","level":"info","method":"GET","msg":"Incoming request","remote":"127.0.0.1","time":"2025-12-19T22:02:00+05:30","timestamp":"2025-12-19T22:02:00+05:30","url":"/favicon.ico"}
