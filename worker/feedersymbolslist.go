@@ -18,7 +18,7 @@ type FeederSymbolListResponse struct {
 }
 
 func FetchFeederSymbolList() ([]string, error) {
-	// Define the WebSocket URL
+	// Define the WebSocket URL // feeder
 	u := url.URL{Scheme: "ws", Host: Env.FEEDER_WS_URL, Path: "/ws"}
 	log.Printf("Connecting to %s", u.String())
 

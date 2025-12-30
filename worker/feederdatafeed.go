@@ -94,6 +94,19 @@ func StartFeederWorker() {
 	FeederConfigData["14536643_TEST"] = testConfig
 	log.Println("TEST: Added second BTCUSD entry with expiry 2025-12-31 for testing")
 
+	// Add USDSGD configuration
+	usdsgdConfig := feederConfig{
+		InstrumentToken:     99999999,
+		ExchangeToken:       "999999",
+		TradingSymbol:       "USDSGD",
+		TradingName:         "USDSGD",
+		SubscribeSymbolName: "USDSGD",
+		Exchange:            "FOREX",
+		Expiry:              "NO EXPIRY",
+	}
+	FeederConfigData["99999999"] = usdsgdConfig
+	log.Println("Added USDSGD configuration to feeder worker")
+
 	feederSymbols = []string{}
 	symbolSet := make(map[string]bool) // Track unique symbols for subscription
 	for _, row := range FeederConfigData {
@@ -167,7 +180,7 @@ func subscribeToFeeder(conn *websocket.Conn) error {
 	log.Println("Subscribing to Feeder symbols:", feederSymbols)
 	payload := map[string]interface{}{
 		"event":   "subscribe",
-		"symbols": feederSymbols, // Example symbols
+		"symbols": feederSymbols, //[]string{"BTCUSD_MIX"}, //feederSymbols, // Example symbols //["EURUSD", "USDCHF"]
 	}
 	data, err := json.Marshal(payload)
 	if err != nil {
@@ -222,6 +235,15 @@ func handleFeederMessage(message []byte) (FeederMarketData, error) {
 }
 func processFeederMarketData(data FeederMarketData) {
 	// log.Printf("Processing FeederMarketData: %+v", data)
+
+	updatedJson, errM := json.Marshal(data)
+	if errM != nil {
+		fmt.Println("getting error for marshalling")
+	}
+	//if data.Symbol == "BTCUSD" || data.SymbolMasterName == "BTCUSD_MIX" {
+	fmt.Println("json feeder data : ", string(updatedJson))
+	//}
+
 	log.Printf("Processing FeederMarketData: Symbol=%s, Name=%s, Expiry=%s", data.Symbol, data.SymbolMasterName, data.Expiry)
 
 	// Use composite key to lookup: SymbolMasterName + Expiry
@@ -308,10 +330,11 @@ func processFeederMarketData(data FeederMarketData) {
 		Close:      data.Close,
 		Volume:     data.Volume,
 		Timestamp:  time.Now(),
-		ExpiryDate: feederData.Expiry,
+		ExpiryDate: data.Expiry,
+		Exchange:   feederData.Exchange,
 	}
 
-	log.Printf("Saving tick - Symbol: %s, Expiry: %s", tick.Symbol, tick.ExpiryDate)
+	log.Printf("Saving tick - Symbol: %s, Exchange: %s, Expiry: %s", tick.Symbol, tick.Exchange, tick.ExpiryDate)
 
 	err := tick.Save()
 	if err != nil {

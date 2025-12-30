@@ -20,11 +20,17 @@ type Tick struct {
 	Volume     float64
 	Timestamp  time.Time
 	ExpiryDate string
+	Exchange   string
 }
 
 func (t *Tick) Save() error {
 	if db.DB == nil {
 		return fmt.Errorf("database pool is nil")
+	}
+
+	// For CRYPTO and FOREX exchanges, only insert if expiry is 'NO EXPIRY'
+	if (t.Exchange == "CRYPTO" || t.Exchange == "FOREX") && t.ExpiryDate != "NO EXPIRY" {
+		return nil // Skip insertion
 	}
 
 	_, err := db.DB.Exec(context.Background(),

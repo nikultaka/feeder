@@ -231,7 +231,7 @@ func LoadClientSheetDetailsConfig(spreadsheetID string, sheetID string) error {
 						TradingName:         strings.TrimSpace(clientRow[3]),
 						SubscribeSymbolName: strings.TrimSpace(clientRow[4]),
 						Expiry:              strings.TrimSpace(clientRow[6]),
-						Exchange:            strings.TrimSpace(clientRow[12]),
+						Exchange:            "FOREX", //strings.TrimSpace(clientRow[12]),
 					}
 				}
 			}
